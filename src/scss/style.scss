@@ -35,6 +35,7 @@ body {
 
 .header {
     margin-top: 50px;
+    margin-bottom: 140px;
 }
 
 .container {
@@ -89,8 +90,9 @@ body {
     top: 0;
     left: 0;
     background: #3C3C3C;
-    max-width: 350px;
+    max-width: 335px;
 
+    width: 100%;
     &-content {
         padding: 60px 41px;
     }
@@ -150,3 +152,56 @@ body {
 
 
 // header (конец)
+
+
+//
+.hero {
+    display: flex;
+}
+.hero-col {
+    &:not(:last-child){
+        margin-right: 123px;
+    }
+}
+.hero-image {
+    padding-top: 135px;
+    padding-left: 135px;
+}
+.hero-title {
+font-family: 'Source Sans Pro';
+
+font-weight: 900;
+font-size: 50px;
+line-height: 63px;
+display: flex;
+align-items: center;
+letter-spacing: 0.035em;
+text-transform: uppercase;
+margin-bottom: 28px;
+color: #463538;
+}
+.hero-descr {
+font-family: 'Source Sans Pro';
+font-weight: 400;
+font-size: 15px;
+line-height: 21px;
+letter-spacing: 0.035em;
+color: #463538;
+opacity: 0.8;
+margin-bottom: 28px;
+}
+.hero-btn {
+width: 200px;
+height: 52px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.01em;
+border: none;
+color: #FFFFFF;
+
+background: #B71833;
+}
