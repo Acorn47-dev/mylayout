@@ -4,7 +4,7 @@ $md2: 768px;
 $md3: 320px;
 
 @import "fonts";
-
+@import "aboutus";
 .wrapper {
     min-width: 100%;
     display: flex;
@@ -131,7 +131,7 @@ body {
 
 //
 .burger {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     background: #3C3C3C;
@@ -259,6 +259,7 @@ body {
         flex-direction: auto;
         margin-right: 0;
     }
+    margin-bottom: 120px;
 }
 
 .hero-col {

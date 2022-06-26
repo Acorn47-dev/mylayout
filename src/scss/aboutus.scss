@@ -1,0 +1,80 @@
+.about-us {
+
+    // .about-us__title
+    display: flex;
+}
+
+
+.about-us-col {
+
+}
+
+.about-us-content{
+    display: flex;
+}
+
+.company {
+
+    // .company__title
+
+    &__title {}
+}
+
+.main-title {
+    font-family: 'Source Sans Pro';
+
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 38px;
+
+    letter-spacing: 0.035em;
+
+    /* Black */
+
+    color: #463538;
+}
+
+.about-us-texts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    grid-gap: 30px;
+}
+.about-texts {
+    &__block {}
+}
+.about-texts__block{
+
+}
+
+.mini-title {
+    font-family: 'Source Sans Pro';
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.035em;
+    color: #463538;
+    margin-bottom: 14px;
+    white-space: k,i;
+}
+
+.subtitle {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 21px;
+letter-spacing: 0.035em;
+color: #463538;
+opacity: 0.8;
+}
+
+.about-us-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.about-images-col{
+
+    max-height: 616px;
+}
