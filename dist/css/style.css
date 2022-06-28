@@ -1,60 +1,123 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 .about-us {
-  display: flex;
+  margin-bottom: 110px;
 }
-
 .about-us-content {
   display: flex;
 }
 
 .main-title {
   font-family: "Source Sans Pro";
+  font-style: normal;
   font-weight: 900;
   font-size: 30px;
   line-height: 38px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.035em;
+  /* Black */
+  color: #463538;
+  margin-bottom: 55px;
+}
+
+.about-texts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+@media (max-width: 450px) {
+  .about-texts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.mini-title {
+  margin-bottom: 14px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
   letter-spacing: 0.035em;
   /* Black */
   color: #463538;
 }
 
-.about-us-texts {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: end;
-  grid-gap: 30px;
-}
-
-.mini-title {
-  font-family: "Source Sans Pro";
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.035em;
-  color: #463538;
-  margin-bottom: 14px;
-  white-space: k, i;
-}
-
 .subtitle {
+  /* Text */
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 21px;
   letter-spacing: 0.035em;
+  /* Black */
   color: #463538;
   opacity: 0.8;
 }
 
 .about-us-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 965px) {
+  .about-images {
+    display: none;
+  }
 }
 
 .about-images-col {
-  max-height: 616px;
+  position: relative;
+  overflow: hidden;
+  min-width: 239px;
+}
+@media (min-width: 1152px) {
+  .about-images-col {
+    min-width: 315px;
+  }
+}
+.about-images-col img {
+  position: relative;
+  overflow: hidden;
+  /* For the following settings we set 100%, but it can be higher if needed 
+  See the answer update */
+}
+@media (max-width: 1152px) {
+  .about-images-col img {
+    margin: 0px 0px 0px -30%;
+  }
+}
+
+.advantages-list {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 768px) {
+  .advantages-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 320px) {
+  .advantages-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.advantages-icon {
+  margin-bottom: 20px;
 }
 
 .wrapper {
@@ -115,7 +178,6 @@ body {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  padding: 0 54px;
 }
 
 .nav {
@@ -258,13 +320,11 @@ body {
   color: #FFFFFF;
 }
 
-.hero {
-  margin-bottom: 120px;
-}
 @media (max-width: 1152px) {
   .hero {
     flex-direction: row-reverse;
     margin-right: 105px;
+    margin-bottom: 250px;
   }
 }
 @media (min-width: 1152px) {
@@ -274,6 +334,11 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 600px) {
@@ -296,7 +361,7 @@ body {
 }
 
 .hero-image {
-  padding-top: 135px;
+  margin-top: 135px;
 }
 @media (min-width: 1920px) {
   .hero-image {

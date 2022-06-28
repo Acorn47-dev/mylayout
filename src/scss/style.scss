@@ -5,6 +5,7 @@ $md3: 320px;
 
 @import "fonts";
 @import "aboutus";
+@import "advantages";
 
 .wrapper {
     min-width: 100%;
@@ -64,7 +65,7 @@ body {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    padding: 0 54px;
+
 
 
 }
@@ -248,8 +249,9 @@ body {
     @media(max-width: $md1) {
         flex-direction: row-reverse;
         margin-right: 105px;
-
+        margin-bottom: 250px;
     }
+    
 
     @media(min-width: $md1) {
         flex-direction: row-reverse;
@@ -259,13 +261,16 @@ body {
         display: flex;
         flex-direction: row;
     }
+    @media(max-width:$md2){
+        margin-bottom: 0;
+    }
 
     @media(max-width: 600px) {
         flex-direction: auto;
         margin-right: 0;
     }
 
-    margin-bottom: 120px;
+
 }
 
 .hero-col {
@@ -285,8 +290,7 @@ body {
 }
 
 .hero-image {
-    padding-top: 135px;
-
+    margin-top: 135px;
     @media(min-width: 1920px) {
         padding-left: 135px;
 
