@@ -1,0 +1,111 @@
+.faq {
+    margin-bottom: 110px;
+        // .faq__title
+    
+        &__title {
+        }
+    }
+    .container {
+    }
+    .faq-content {
+        display: flex;
+    }
+    .faq-col {
+    }
+    
+    .main-title {
+        font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 38px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.035em;
+    
+    /* Black */
+    
+    color: #463538;
+    margin-bottom: 55px;
+    }
+    .title-company {
+    }
+    .faq-texts {
+    }
+    .faq-texts {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+        // .faq-texts__block
+        @media(max-width: 450px){
+            grid-template-columns: repeat(1,1fr);
+        }
+        &__block {
+        }
+    }
+    .mini-title {
+    margin-bottom: 14px;
+    
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.035em;
+    
+    /* Black */
+    
+    color: #463538;
+    }
+    .subtitle {
+    
+    
+    /* Text */
+    
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0.035em;
+    
+    /* Black */
+    
+    color: #463538;
+    
+    opacity: 0.8;
+    }
+    .faq-images {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .faq-images {
+        @media(max-width:965px){
+            display: none;
+    
+        }
+    
+    
+    }
+    .faq-images-col {
+        position: relative;
+        overflow: hidden;
+        min-width: 239px;
+        @media(min-width: $md1){
+            min-width: 315px;
+        }
+        img{
+            @media(max-width: $md1){
+               margin:0px 0px 0px -30%;
+            }
+           position: relative;
+           overflow: hidden;
+            /* For the following settings we set 100%, but it can be higher if needed 
+            See the answer update */
+        }
+    }

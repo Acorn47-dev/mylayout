@@ -124,6 +124,10 @@
   margin-bottom: 20px;
 }
 
+.price {
+  margin-bottom: 110px;
+}
+
 .price-blocks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -254,6 +258,285 @@
   .block-value {
     font-size: 20px;
   }
+}
+
+.reviews {
+  margin-bottom: 110px;
+}
+
+.reviews-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+@media (max-width: 970px) {
+  .reviews-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.reviews-item {
+  max-width: 660px;
+  padding: 36px 32px;
+}
+@media (max-width: 970px) {
+  .reviews-item {
+    max-width: none;
+  }
+}
+
+.reviews-header {
+  display: flex;
+  margin-bottom: 21px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 470px) {
+  .user {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.user-avatar {
+  margin-right: 15px;
+}
+
+.user-login {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.035em;
+  color: #463538;
+}
+
+.user-location {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.035em;
+  color: #463538;
+  opacity: 0.8;
+}
+
+.reviews-text {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.035em;
+  color: #463538;
+  opacity: 0.8;
+}
+
+.faq {
+  margin-bottom: 110px;
+}
+.faq-content {
+  display: flex;
+}
+
+.main-title {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.035em;
+  /* Black */
+  color: #463538;
+  margin-bottom: 55px;
+}
+
+.faq-texts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+@media (max-width: 450px) {
+  .faq-texts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.mini-title {
+  margin-bottom: 14px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.035em;
+  /* Black */
+  color: #463538;
+}
+
+.subtitle {
+  /* Text */
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.035em;
+  /* Black */
+  color: #463538;
+  opacity: 0.8;
+}
+
+.faq-images {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 965px) {
+  .faq-images {
+    display: none;
+  }
+}
+
+.faq-images-col {
+  position: relative;
+  overflow: hidden;
+  min-width: 239px;
+}
+@media (min-width: 1152px) {
+  .faq-images-col {
+    min-width: 315px;
+  }
+}
+.faq-images-col img {
+  position: relative;
+  overflow: hidden;
+  /* For the following settings we set 100%, but it can be higher if needed 
+  See the answer update */
+}
+@media (max-width: 1152px) {
+  .faq-images-col img {
+    margin: 0px 0px 0px -30%;
+  }
+}
+
+.feedback {
+  position: relative;
+  overflow: hidden;
+}
+
+.feedback-content {
+  display: flex;
+}
+
+.feedback-col {
+  position: relative;
+}
+
+.feedback-background {
+  position: relative;
+  z-index: -10;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 1152px) {
+  .content {
+    left: 10%;
+  }
+}
+
+.feedback-title {
+  margin-bottom: 55px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.035em;
+  color: #FFFFFF;
+}
+
+.order-service-input {
+  background: none;
+  padding: 10px 0;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+  line-height: 18px;
+  border: none;
+  letter-spacing: 0.035em;
+  border-bottom: 1px solid #fff;
+  opacity: 0.7;
+  color: #FFFFFF;
+}
+.order-service-input::placeholder {
+  color: #FFFFFF;
+}
+.order-service-input:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.order-service-btn {
+  width: 238.67px;
+  height: 52px;
+  left: 275px;
+  top: 4729.57px;
+  background: #B71833;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 313px;
+  margin-bottom: 35px;
+}
+.contacts-item__title {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.035em;
+  color: #FFFFFF;
+}
+.contacts-item__subtitle {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 141.2%;
+  letter-spacing: 0.035em;
+  color: #FFFFFF;
 }
 
 .wrapper {
