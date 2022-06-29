@@ -6,7 +6,7 @@ $md3: 320px;
 @import "fonts";
 @import "aboutus";
 @import "advantages";
-
+@import "price";
 .wrapper {
     min-width: 100%;
     display: flex;
@@ -46,9 +46,10 @@ body {
     width: 100%;
     height: 100%;
 
-    @media(min-width: $md3) {
+    @media(min-width: $md3 + 1) {
         display: none;
     }
+   
 }
 
 .header {
