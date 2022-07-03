@@ -1,147 +1,160 @@
-.feedback{
+.feedback {
     position: relative;
     overflow: hidden;
 
 }
+
 .feedback-content {
     display: flex;
-    @media(max-width: 690px){
+
+    @media(max-width: 690px) {
         flex-direction: column;
     }
 }
+
 .feedback-col {
-position: relative;
-max-width: 950px;
-width: 100%;
+    position: relative;
+    max-width: 950px;
+    width: 100%;
 
 }
+
 .feedback-background {
     position: relative;
     z-index: -10;
 }
-.order-service {
-}
+
+.order-service {}
+
 .content {
     height: 550px;
     display: flex;
     flex-direction: column;
-align-items: center;
+    align-items: center;
 
-justify-content: center;
-   
+    justify-content: center;
+
     background-position: center;
     background-repeat: no-repeat;
 
 }
 
-.background-1{
+.background-1 {
     background-image: url(../img/feedback-1.jpg);
     background-position: center;
 }
-.background-2{
+
+.background-2 {
     background-image: url(../img/feedback-2.jpg);
     background-position: center;
 }
 
-.feedback-title{
+.feedback-title {
     margin-bottom: 55px;
     font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 900;
-font-size: 30px;
-line-height: 38px;
-letter-spacing: 0.035em;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.035em;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
+
 .order-service-input {
     background: none;
     padding: 10px 0;
     width: 242px;
     font-family: 'Source Sans Pro';
-font-weight: 400;
-font-size: 14px;
-outline:none;
-line-height: 18px;
-border: none;
-letter-spacing: 0.035em;
-border-bottom: 1px solid #fff;
-opacity: 0.7;
-color: #FFFFFF;
-&::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    outline: none;
+    line-height: 18px;
+    border: none;
+    letter-spacing: 0.035em;
+    border-bottom: 1px solid #fff;
+    opacity: 0.7;
     color: #FFFFFF;
+
+    &::placeholder {
+        color: #FFFFFF;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 35px;
+    }
 }
-&:not(:last-child){
-   margin-bottom: 35px;
-}
-}
-.input-name {
-}
-.input-tel {
-}
-.input-email {
-}
+
+.input-name {}
+
+.input-tel {}
+
+.input-email {}
+
 .order-service-btn {
     width: 238.67px;
-height: 52px;
-left: 275px;
-top: 4729.57px;
-background: #B71833;
-border: none;
-font-family: 'Source Sans Pro';
-font-weight: 700;
-font-size: 18px;
-line-height: 23px;
-cursor: pointer;
-letter-spacing: 0.01em;
+    height: 52px;
+    left: 275px;
+    top: 4729.57px;
+    background: #B71833;
+    border: none;
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    cursor: pointer;
+    letter-spacing: 0.01em;
 
-color: #FFFFFF;
-transition: all 0.3s ease 0s;
-&:hover{
-    color: #B71833;
-    background: #fff;
+    color: #FFFFFF;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        color: #B71833;
+        background: #fff;
+    }
 }
-}
-.input-btn {
-}
-.contacts {
-}
-.contacts-title {
-}
-.contacts-list {
-}
-.contacts-item__icon{
+
+.input-btn {}
+
+.contacts {}
+
+.contacts-title {}
+
+.contacts-list {}
+
+.contacts-item__icon {
     margin-right: 35px;
 
 }
+
 .contacts-item {
-display: flex;
-align-items: start;
-text-align: start;
+    display: flex;
+    align-items: start;
+    text-align: start;
 
-max-width: 343px;
-margin-bottom: 35px;
-white-space: wrap;
-		// .contacts-item__title
+    max-width: 343px;
+    margin-bottom: 35px;
+    white-space: wrap;
+    // .contacts-item__title
 
-		&__title {
-            font-family: 'Source Sans Pro';
-font-weight: 700;
-font-size: 17px;
-line-height: 21px;
-letter-spacing: 0.035em;
+    &__title {
+        font-family: 'Source Sans Pro';
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 21px;
+        letter-spacing: 0.035em;
 
-color: #FFFFFF;
-		}
+        color: #FFFFFF;
+    }
 
-		// .contacts-item__subtitle
+    // .contacts-item__subtitle
 
-		&__subtitle {
-            font-family: 'Source Sans Pro';
-font-weight: 300;
-font-size: 15px;
-line-height: 141.2%;
-letter-spacing: 0.035em;
-color: #FFFFFF;
-		}
+    &__subtitle {
+        font-family: 'Source Sans Pro';
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 141.2%;
+        letter-spacing: 0.035em;
+        color: #FFFFFF;
+    }
 }
