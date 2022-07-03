@@ -17,7 +17,7 @@ $md3: 320px;
     margin: 0 auto;
     min-height: 100vh;
     position: relative;
-    padding: 0 10px;
+
 
     overflow: hidden;
     flex-direction: column;
@@ -69,10 +69,15 @@ body {
     max-width: $maxWidthContainer;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
-
-
-
+    @media(max-width: $md1){
+        padding: 0 56px;
+    }
+    @media(max-width: $md2){
+        padding: 0 15px;
+    }
+    @media(max-width: $md1){
+        padding: 0 14.98px;
+    }
 }
 
 // header (начало)
@@ -101,9 +106,9 @@ body {
     justify-content: flex-end;
 
     // .list__item
-    @media(max-width: $md2) {
+
+    @media(max-width:1152px) {
         display: none;
-        //ВРЕРЕМЕННОЕ СКРЫТИЕ МЕНЮ
     }
 
     &__item {
@@ -122,6 +127,30 @@ body {
 
 .item-icon {
     margin: 0px 8px 0px 0px;
+
+}
+.burger-header{
+    display: flex;
+    width: 95%;
+    justify-content: space-between; 
+}
+.header-back{
+    transform: rotate(-90deg);
+    display: none;
+    @media(max-width: 1152px){
+        display: block;
+    }
+}
+.arrow-btn{
+    width: 33px;
+    height: 33px;
+
+    background: #494949;
+border: none;
+background-image: url(../img/arrow-icon.svg);
+background-repeat: no-repeat;
+background-position: center;
+border-radius: 2px;
 
 }
 
@@ -147,19 +176,24 @@ body {
     max-width: 335px;
     transition: all 0.3s;
     width: 100%;
-
+z-index: 100;
     &-content {
         padding: 60px 41px;
-
         @media(max-width: $md2) {
             padding: 60px 0px 60px 10px;
         }
     }
 
-    @media(max-width:1101px) {
+    @media(max-width:1152px) {
         left: -100%;
     }
+    &.--active{
+        left: 0%;
+    }
+
 }
+
+
 
 .header-title {
     white-space: nowrap;
@@ -186,14 +220,54 @@ body {
 }
 
 .burger-list {
+
     margin-bottom: 51px;
 }
 
 .burger-icon {
 
-    left: 0;
-    top: 0;
+    position: relative;
+    width: 25px;
+    height: 18px;
+    border: none;
 
+
+top: 11px;
+left: 0;
+}
+
+.burger__line{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    @media(max-width: $md3){
+        background-color: #fff;
+    }
+    transition: opacity 0.3s ease-in-out;
+}
+.burger-icon::before,
+.burger-icon::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    @media(max-width: $md3){
+        background-color: #fff;
+    }
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
+}
+
+.burger-icon::before{
+    top: 0;
+}
+.burger-icon::after{
+    bottom: 0;
 }
 
 .header-adaptive {
@@ -202,7 +276,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
 
-    @media(min-width:$md2) {
+    @media(min-width:1152px) {
         display: none;
     }
 }
@@ -229,6 +303,7 @@ body {
     font-weight: 700;
 }
 
+
 .feedback-btn {
     border: 2px solid #fff;
     background: none;
@@ -239,9 +314,13 @@ body {
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 0.01em;
-
+    cursor: pointer;
     color: #FFFFFF;
-
+    transition: all 0.3s ease 0s;
+    &:hover{
+        color: #000;
+        background: #fff;
+    }
 }
 
 
@@ -279,10 +358,13 @@ body {
 }
 
 .hero-col {
-
-    &:not(:last-child) {
-        margin-right: 123px;
+    @media(min-width: 1333px){
+        &:not(:last-child) {
+        
+            margin-right: 123px;
+        }
     }
+
 
     @media(max-width:600px) {
         &-col-image {
@@ -378,6 +460,11 @@ body {
     letter-spacing: 0.01em;
     border: none;
     color: #FFFFFF;
-
+    cursor: pointer;
     background: #B71833;
+    transition: all 0.3s ease 0s;
+    &:hover{
+        color: #B71833;
+        background: #fff;
+    }
 }

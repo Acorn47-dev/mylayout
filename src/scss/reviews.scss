@@ -19,6 +19,10 @@ padding:36px 32px;
 @media(max-width:970px){
     max-width: none;
 }
+@media(max-width:367px){
+    padding:36px 0px;
+}
+
 }
 .reviews-header {
     display: flex;
@@ -49,6 +53,7 @@ font-size: 18px;
 line-height: 23px;
 letter-spacing: 0.035em;
 color: #463538;
+white-space: nowrap;
 }
 .user-location {
 font-family: 'Source Sans Pro';

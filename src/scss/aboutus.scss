@@ -1,16 +1,21 @@
-.about-us {
+.about {
 margin-bottom: 110px;
-    // .about-us__title
+@media(max-width: $md3){
+    margin-top: 100px;
+}
+
+    // .about__title
 
     &__title {
     }
+    margin-top: 20px;
 }
 .container {
 }
-.about-us-content {
+.about-content {
     display: flex;
 }
-.about-us-col {
+.about-col {
 }
 
 .main-title {
@@ -31,8 +36,9 @@ color: #463538;
 margin-bottom: 55px;
 }
 .title-company {
+    white-space: nowrap;
 }
-.about-us-texts {
+.about-texts {
 }
 .about-texts {
     display: grid;
@@ -79,7 +85,7 @@ color: #463538;
 
 opacity: 0.8;
 }
-.about-us-images {
+.about-images {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(2,1fr);

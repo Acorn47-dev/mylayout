@@ -15,14 +15,21 @@ justify-content: space-between;
     flex-wrap: wrap;
 }
 .footer-main{
+    white-space: nowrap;
+    padding-right: 30px;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
+    align-items: start;
+    text-align: start;
+
 }
 .footer-logo {
     font-family: 'Source Sans Pro';
 font-weight: 900;
 font-size: 30px;
 line-height: 38px;
+margin-bottom: 16px;
 letter-spacing: 0.035em;
 text-transform: uppercase;
 color: #FFFFFF;
@@ -57,4 +64,15 @@ color: #FFFFFF;
 &.active{
     font-weight: 700;
 }
+}
+.footer-links{
+    @media (max-width: 690px) {
+        display: none;
+    }
+}
+.footer-other{
+    display: none;
+    @media (max-width: 690px) {
+        display: block;
+    }
 }

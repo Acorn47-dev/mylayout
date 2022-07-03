@@ -33,11 +33,14 @@ justify-content: center;
     background-repeat: no-repeat;
 
 }
+
 .background-1{
     background-image: url(../img/feedback-1.jpg);
+    background-position: center;
 }
 .background-2{
     background-image: url(../img/feedback-2.jpg);
+    background-position: center;
 }
 
 .feedback-title{
@@ -89,11 +92,15 @@ font-family: 'Source Sans Pro';
 font-weight: 700;
 font-size: 18px;
 line-height: 23px;
-
+cursor: pointer;
 letter-spacing: 0.01em;
 
 color: #FFFFFF;
-
+transition: all 0.3s ease 0s;
+&:hover{
+    color: #B71833;
+    background: #fff;
+}
 }
 .input-btn {
 }
@@ -103,13 +110,18 @@ color: #FFFFFF;
 }
 .contacts-list {
 }
+.contacts-item__icon{
+    margin-right: 35px;
+
+}
 .contacts-item {
 display: flex;
 align-items: start;
-justify-content: space-between;
-width: 313px;
-margin-bottom: 35px;
+text-align: start;
 
+max-width: 343px;
+margin-bottom: 35px;
+white-space: wrap;
 		// .contacts-item__title
 
 		&__title {

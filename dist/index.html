@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220703115743">
     <title>Главная</title>
 
 </head>
@@ -33,13 +33,25 @@
 
         </nav>
     </div>
+    <div class="container">
     <div class="header-adaptive">
-        <div class="burger-title header-title logo">motodrive</div>
-        <img class="burger-icon" src="img/burger-icon.svg">
+        
+            <div class="burger-title header-title logo">motodrive</div>
+            <div class="burger-icon">
+                <span class="burger__line"></span>
+            </div>
+        </div>
     </div>
     <div class="burger">
         <div class="burger-content">
-            <div class="burger-title header-title logo-burger">motodrive</div>
+            <div class="burger-header">
+                <div class="burger-title header-title logo-burger">motodrive</div>
+                <button class="header-back arrow-btn">
+                    <img src="img/arrow-icon.svg" alt="">
+                </button>
+            </div>
+
+            
             <ul class="burger-list blist">
                 <li class="blist-item burger-text --active">Главная</li>
                 <li class="blist-item burger-text">Наша компания</li>
@@ -55,54 +67,57 @@
     </div>
 </header>
             <div class="hero-background">
-    <img src="img/hero-background.jpg" alt="">
+    <picture><source srcset="img/hero-background.webp" type="image/webp"><img src="img/hero-background.jpg" alt=""></picture>
 </div>
 <section class="hero">
     <div class="hero-col hero-col-image">
-        <img src="img/hero-image.png" class="hero-image">
+        <picture><source srcset="img/hero-image.webp" type="image/webp"><img src="img/hero-image.png" class="hero-image"></picture>
     </div>
     <div class="hero-col">
-        <h1 class="hero-title">Прокат кроссовых<br>
-            Мотоциклов</h1>
-        <div class="hero-descr">Запоминающиеся выходные в Бресте –<br>
-            прогулка на мотоциклах по лесу!</div>
-        <button class="hero-btn">
-            Читать больше
-        </button>
+        <div class="container">
+            <h1 class="hero-title">Прокат кроссовых<br>
+                Мотоциклов</h1>
+            <div class="hero-descr">Запоминающиеся выходные в Бресте –<br>
+                прогулка на мотоциклах по лесу!</div>
+            <button class="hero-btn">
+                Читать больше
+            </button>
+        </div>
+
     </div>
 
 </section>
 
-            <section class="about-us">
+            <section class="about">
     <div class="container">
       
-        <div class="about-us-content">
+        <div class="about-content">
             
-            <div class="about-us-col" style="margin-top: 120px;">
+            <div class="about-col" style="margin-top: 120px;">
                 <div class="company__title main-title title-company">Наша компания</div>
-                <div class="about-us-texts about-texts">
+                <div class="about-texts about-texts">
                     <div class="about-texts__block">
-                        <div class="about-us__title mini-title">Немного о нас</div>
-                        <div class="about-us__title subtitle">MOTODRIVE — одна из первых компаний по прокату
+                        <div class="about__title mini-title">Немного о нас</div>
+                        <div class="about__title subtitle">MOTODRIVE — одна из первых компаний по прокату
                             мототехники в Бресте! Мы предоставляем услуги проката кроссовых мотциклов. У нас большой опыт по
                             проведению катаний на мотоцикле как для новичков, так и опытных! Если вы новичек — не
                             переживайте! Мы поможем Вам разобраться с техникой и научим ездить!</div>
                     </div>
                     <div class="about-texts__block">
-                        <div class="about-us__title mini-title">С нами безопасно!</div>
-                        <div class="about-us__title subtitle">Мы отвечаем за вашу безопасность при катании. Поэтому
+                        <div class="about__title mini-title">С нами безопасно!</div>
+                        <div class="about__title subtitle">Мы отвечаем за вашу безопасность при катании. Поэтому
                             делаем все, чтоб избежать опастных ситуаций и травм. Экипировка выдаётся бесплатно! Все
                             мотоциклы своевременно обслуживаются. Особое внимание уделяется обудению новичков.</div>
                     </div>
                     <div class="about-texts__block">
-                        <div class="about-us__title mini-title">Когда мы работаем?</div>
-                        <div class="about-us__title subtitle">Когда мы работаем?
+                        <div class="about__title mini-title">Когда мы работаем?</div>
+                        <div class="about__title subtitle">Когда мы работаем?
                             Мы работаем круглосуточно без выходных в любую пору года! Звоните в любое удобное для вас время!
                         </div>
                     </div>
                     <div class="about-texts__block">
-                        <div class="about-us__title mini-title">Как взять мотоцикл в аренду?</div>
-                        <div class="about-us__title subtitle">Оставить заявку на сайте Motodrive.by или позвонить по
+                        <div class="about__title mini-title">Как взять мотоцикл в аренду?</div>
+                        <div class="about__title subtitle">Оставить заявку на сайте Motodrive.by или позвонить по
                             указанным телефонам, мы подберем для Вас удобное время и день, стоимость указана на сайте ниже.
                         </div>
                     </div>
@@ -110,15 +125,15 @@
                 </div>
     
             </div>
-            <div class="about-us-col">
-                <div class="about-us-images about-images">
+            <div class="about-col">
+                <div class="about-images about-images">
                     <div class="about-images-col" style="margin: 14px 0px 0px 0px;">
-                        <img src="img/about-1.jpg" class="about-image" alt="about-1.jpg">
-                        <img src="img/about-2.jpg" class="about-image" alt="about-2.jpg">
+                        <picture><source srcset="img/about-1.webp" type="image/webp"><img src="img/about-1.jpg" class="about-image" alt="about-1.jpg"></picture>
+                        <picture><source srcset="img/about-2.webp" type="image/webp"><img src="img/about-2.jpg" class="about-image" alt="about-2.jpg"></picture>
                     </div>
                     <div class="about-images-col" style="margin: -14px 0px 0px 0px;">
-                        <img src="img/about-3.jpg" class="about-image" alt="about-3.jpg">
-                        <img src="img/about-4.jpg" class="about-image" alt="about-4.jpg">
+                        <picture><source srcset="img/about-3.webp" type="image/webp"><img src="img/about-3.jpg" class="about-image" alt="about-3.jpg"></picture>
+                        <picture><source srcset="img/about-4.webp" type="image/webp"><img src="img/about-4.jpg" class="about-image" alt="about-4.jpg"></picture>
                     </div>
                 </div>
             </div>
@@ -168,7 +183,7 @@
             <div class="price-title main-title">Цены</div>
             <div class="price-blocks">
                 <article class="price-block">
-                    <img src="img/block-1.jpg" alt="" class="price-block__img">
+                    <picture><source srcset="img/block-1.webp" type="image/webp"><img src="img/block-1.jpg" alt="" class="price-block__img"></picture>
                     <div class="price-block__price">35p.</div>
                     <div class="price-block__info block-info">
                         <div class="block-info__header">
@@ -184,7 +199,7 @@
                     </div>
                 </article>
                 <article class="price-block">
-                    <img src="img/block-2.jpg" alt="" class="price-block__img">
+                    <picture><source srcset="img/block-2.webp" type="image/webp"><img src="img/block-2.jpg" alt="" class="price-block__img"></picture>
                     <div class="price-block__price">45p.</div>
                     <div class="price-block__info block-info">
                         <div class="block-info__header">
@@ -200,7 +215,7 @@
                     </div>
                 </article>
                 <article class="price-block">
-                    <img src="img/block-3.jpg" alt="" class="price-block__img">
+                    <picture><source srcset="img/block-3.webp" type="image/webp"><img src="img/block-3.jpg" alt="" class="price-block__img"></picture>
                     <div class="price-block__price">30p.</div>
                     <div class="price-block__info block-info">
                         <div class="block-info__header">
@@ -216,7 +231,7 @@
                     </div>
                 </article>
                 <article class="price-block">
-                    <img src="img/block-4.jpg" alt="" class="price-block__img">
+                    <picture><source srcset="img/block-4.webp" type="image/webp"><img src="img/block-4.jpg" alt="" class="price-block__img"></picture>
                     <div class="price-block__price">40p.</div>
                     <div class="price-block__info block-info">
                         <div class="block-info__header">
@@ -242,7 +257,7 @@
             <div class="reviews-list">
                 <article class="reviews-item">
                     <div class="reviews-header">
-                        <img src="img/avatar-1.png" class="user-avatar">
+                        <picture><source srcset="img/avatar-1.webp" type="image/webp"><img src="img/avatar-1.png" class="user-avatar"></picture>
                         <div class="user">
                             
                             <div class="user-info">
@@ -269,7 +284,7 @@
                 </article>
                 <article class="reviews-item">
                     <div class="reviews-header">
-                        <img src="img/avatar-2.png" class="user-avatar">
+                        <picture><source srcset="img/avatar-2.webp" type="image/webp"><img src="img/avatar-2.png" class="user-avatar"></picture>
                         <div class="user">
                             
                             <div class="user-info">
@@ -296,7 +311,7 @@
                 </article>
                 <article class="reviews-item">
                     <div class="reviews-header">
-                        <img src="img/avatar-3.png" class="user-avatar">
+                        <picture><source srcset="img/avatar-3.webp" type="image/webp"><img src="img/avatar-3.png" class="user-avatar"></picture>
                         <div class="user">
                             
                             <div class="user-info">
@@ -323,7 +338,7 @@
                 </article>
                 <article class="reviews-item">
                     <div class="reviews-header">
-                        <img src="img/avatar-4.png" class="user-avatar">
+                        <picture><source srcset="img/avatar-4.webp" type="image/webp"><img src="img/avatar-4.png" class="user-avatar"></picture>
                         <div class="user">
                             
                             <div class="user-info">
@@ -406,12 +421,12 @@
             <div class="faq-col">
                 <div class="faq-images faq-images">
                     <div class="faq-images-col" style="margin: 14px 0px 0px 0px;">
-                        <img src="img/faq-1.jpg" class="faq-image" alt="faq-1.jpg">
-                        <img src="img/faq-2.jpg" class="faq-image" alt="faq-2.jpg">
+                        <picture><source srcset="img/faq-1.webp" type="image/webp"><img src="img/faq-1.jpg" class="faq-image" alt="faq-1.jpg"></picture>
+                        <picture><source srcset="img/faq-2.webp" type="image/webp"><img src="img/faq-2.jpg" class="faq-image" alt="faq-2.jpg"></picture>
                     </div>
                     <div class="faq-images-col" style="margin: -14px 0px 0px 0px;">
-                        <img src="img/faq-3.jpg" class="faq-image" alt="faq-3.jpg">
-                        <img src="img/faq-4.jpg" class="faq-image" alt="faq-4.jpg">
+                        <picture><source srcset="img/faq-3.webp" type="image/webp"><img src="img/faq-3.jpg" class="faq-image" alt="faq-3.jpg"></picture>
+                        <picture><source srcset="img/faq-4.webp" type="image/webp"><img src="img/faq-4.jpg" class="faq-image" alt="faq-4.jpg"></picture>
                     </div>
                 </div>
             </div>
@@ -450,7 +465,7 @@
     
                             </div>
                             <div class="contacts-info">
-                                <div class="contacts-item__title">david.kolesnikovich@mail.ru</div>
+                                <a href="mailto:david.kolesnikovich@mail.ru" class="contacts-item__title">david.kolesnikovich@mail.ru</a>
                                 <div class="contacts-item__subtitle">Присылайте ваши вопросы, пожелания</div>
                             </div>
                         </li>
@@ -479,8 +494,8 @@
     
                             </div>
                             <div class="contacts-info">
-                                <div class="contacts-item__title">david.kolesnikovich@mail.ru</div>
-                                <div class="contacts-item__subtitle">Присылайте ваши вопросы, пожелания</div>
+                                <a class="contacts-item__title">_cross_drive_</a>
+                                <div class="contacts-item__subtitle">Зайди к нам на страницу!</div>
                             </div>
                         </li>
                         <li class="contacts-item">
@@ -495,8 +510,8 @@
     
                             </div>
                             <div class="contacts-info">
-                                <div class="contacts-item__title">david.kolesnikovich@mail.ru</div>
-                                <div class="contacts-item__subtitle">Присылайте ваши вопросы, пожелания</div>
+                                <a href="tel:+375298834236" class="contacts-item__title">+375 29 8834236</a>
+                                <div class="contacts-item__subtitle">Позвони и узнай то, что тебя интересует!</div>
                             </div>
                         </li>
     
@@ -514,7 +529,7 @@
                 <div class="footer-logo">motodrive</div>
                 <div class="footer-copy">©2021 sitename.by | Все права защищены</div>
             </div>
-            <div class="footer-col">
+            <div class="footer-col footer-links">
                 <div class="footer-link active">Главная</div>
                 <div class="footer-link">Наша компания</div>
                 <div class="footer-link">компания</div>
@@ -525,13 +540,19 @@
                 <div class="footer-link">Заказать услуги</div>
                 <div class="footer-link">Контакты</div>
             </div>
+            <div class="footer-col footer-other">
+                <button class="footer-btn arrow-btn">
+                    <img src="img/arrow-icon.svg" alt="">
+                </button>
+            </div>
+
         </div>
     </div>
 </footer>
 
             
         </div>
-        <script src="js/app.min.js"></script>
+        <script src="js/app.min.js?_v=20220703115743"></script>
     </body>
 
 </html>
