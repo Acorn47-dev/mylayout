@@ -1,7 +1,7 @@
 .feedback {
     position: relative;
     overflow: hidden;
-
+transform: translateY(1px);
 }
 
 .feedback-content {
@@ -14,9 +14,8 @@
 
 .feedback-col {
     position: relative;
-    max-width: 950px;
+    max-width: 960px;
     width: 100%;
-
 }
 
 .feedback-background {
@@ -33,7 +32,7 @@
     align-items: center;
 
     justify-content: center;
-
+    text-align: start;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -116,7 +115,9 @@
 
 .input-btn {}
 
-.contacts {}
+.contacts {
+
+}
 
 .contacts-title {}
 
@@ -129,8 +130,8 @@
 
 .contacts-item {
     display: flex;
-    align-items: start;
-    text-align: start;
+    align-items: flex-start;
+justify-content: flex-start;
 
     max-width: 343px;
     margin-bottom: 35px;
@@ -142,8 +143,9 @@
         font-weight: 700;
         font-size: 17px;
         line-height: 21px;
+        
         letter-spacing: 0.035em;
-
+width: 100%;
         color: #FFFFFF;
     }
 

@@ -1,5 +1,5 @@
 .reviews{
-    margin-bottom: 110px;
+    margin-bottom: 100px;
 }
 .reviews-content {
     display: flex;
@@ -16,6 +16,7 @@
 .reviews-item {
 max-width: 660px;
 padding:36px 32px;
+background: #FBFBFB;
 @media(max-width:970px){
     max-width: none;
 }

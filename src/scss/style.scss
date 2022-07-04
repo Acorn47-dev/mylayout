@@ -69,15 +69,15 @@ body {
     max-width: $maxWidthContainer;
     margin: 0 auto;
     position: relative;
+    padding: 0 16px;
     @media(max-width: $md1){
         padding: 0 56px;
     }
     @media(max-width: $md2){
-        padding: 0 15px;
+        padding: 0 55px;
     }
-    @media(max-width: $md1){
-        padding: 0 14.98px;
-    }
+
+
 }
 
 // header (начало)
@@ -107,7 +107,7 @@ body {
 
     // .list__item
 
-    @media(max-width:1152px) {
+    @media(max-width:1151px) {
         display: none;
     }
 
@@ -162,9 +162,11 @@ border-radius: 2px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.066em;
-
     text-decoration: none;
     color: #463538;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 //
@@ -184,7 +186,7 @@ z-index: 100;
         }
     }
 
-    @media(max-width:1152px) {
+    @media(max-width:1151px) {
         left: -100%;
     }
     &.--active{
@@ -271,12 +273,13 @@ left: 0;
 }
 
 .header-adaptive {
-    display: flex;
+    
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-
-    @media(min-width:1152px) {
+    display: flex;
+    @media(min-width: 1151px) {
+       
         display: none;
     }
 }
@@ -297,6 +300,9 @@ left: 0;
     }
 
     color: #FFFFFF;
+    &:hover{
+        font-weight: 700;
+    }
 }
 
 .--active {
@@ -345,6 +351,9 @@ left: 0;
         display: flex;
         flex-direction: row;
     }
+    @media(max-width: 1152px){
+        flex-direction:row-reverse;
+    }
     @media(max-width:$md2){
         margin-bottom: 0;
     }
@@ -361,10 +370,12 @@ left: 0;
     @media(min-width: 1333px){
         &:not(:last-child) {
         
-            margin-right: 240px;
+            margin-right: 123px;
         }
     }
-
+    @media(max-width: 1152px){
+        margin-right: 85px;
+    }
 
     @media(max-width:600px) {
         &-col-image {
@@ -464,7 +475,6 @@ left: 0;
     background: #B71833;
     transition: all 0.3s ease 0s;
     &:hover{
-        color: #B71833;
-        background: #fff;
+        background: #FFD43A;
     }
 }

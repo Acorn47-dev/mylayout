@@ -96,8 +96,9 @@ width: 100%;
 
     &__header {
         display: flex;
-        border-bottom: 1px solid #FFFFFF;
-
+        border-bottom: 1px solid;
+    
+        border-image:linear-gradient(to right, #ffffff71, rgba(255, 255, 255, 0)) 47% 0%;
         padding-bottom: 14px;
         margin-bottom: 14px;
     }
