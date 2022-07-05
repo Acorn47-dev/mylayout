@@ -49,8 +49,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    img{
+        width: 100%;
+    }
 
-    @media(min-width: $md3 + 1) {
+    @media(min-width: 425px + 1px) {
         display: none;
     }
    
@@ -69,12 +72,16 @@ body {
     max-width: $maxWidthContainer;
     margin: 0 auto;
     position: relative;
+
     padding: 0 16px;
     @media(max-width: $md1){
         padding: 0 56px;
     }
     @media(max-width: $md2){
-        padding: 0 55px;
+        padding: 0 15px;
+    }
+    @media(max-width: 426px){
+        padding: 0 14px;
     }
 
 
@@ -192,6 +199,11 @@ z-index: 100;
     &.--active{
         left: 0%;
     }
+    @media(max-width: 426px){
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
 
 }
 
@@ -212,7 +224,7 @@ z-index: 100;
 .logo {
     color: #000;
 
-    @media(max-width: $md3) {
+    @media(max-width: 426px) {
         color: #fff;
     }
 }
@@ -246,7 +258,7 @@ left: 0;
     width: 100%;
     height: 4px;
     background-color: #000;
-    @media(max-width: $md3){
+    @media(max-width: 426px){
         background-color: #fff;
     }
     transition: opacity 0.3s ease-in-out;
@@ -259,7 +271,7 @@ left: 0;
     width: 100%;
     height: 4px;
     background-color: #000;
-    @media(max-width: $md3){
+    @media(max-width: 426px){
         background-color: #fff;
     }
     transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
@@ -432,15 +444,17 @@ left: 0;
         font-size: 30px;
     }
 
-    @media(max-width: $md3) {
+    @media(max-width: 426px) {
         //    color:#fff;
         font-size: 28px;
         line-height: 35px;
     }
 
     @media(max-width: $md3) {
-        color: #fff;
         margin-bottom: 5.5px;
+    }
+    @media(max-width: 426px) {
+        color: #fff;
     }
 }
 
@@ -454,7 +468,7 @@ left: 0;
     opacity: 0.8;
     margin-bottom: 28px;
 
-    @media(max-width: $md3) {
+    @media(max-width: 426px) {
         color: #fff;
     }
 }

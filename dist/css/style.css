@@ -5,16 +5,22 @@
 }
 @media (max-width: 1153px) {
   .about {
-    margin-top: 100px;
+    margin-top: 120px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 1101px) {
   .about {
-    margin-top: 100px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 426px) {
+  .about {
+    margin-top: 10px;
   }
 }
 .about-content {
   display: flex;
+  align-items: flex-end;
 }
 
 .texts-col {
@@ -86,13 +92,7 @@
   grid-gap: 30px;
   grid-template-columns: repeat(2, 1fr);
 }
-@media (min-width: 1366px) {
-  .about-images {
-    transform: translateY(-8%);
-  }
-}
-
-@media (max-width: 965px) {
+@media (max-width: 1101px) {
   .about-images {
     display: none;
   }
@@ -129,7 +129,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 426px) {
   .advantages-list {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -472,7 +472,7 @@
   }
 }
 
-@media (max-width: 965px) {
+@media (max-width: 1101px) {
   .faq-images {
     display: none;
   }
@@ -522,19 +522,36 @@
 }
 
 .content {
+  width: 385.7142857143px;
   height: 550px;
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: start;
   background-position: center;
   background-repeat: no-repeat;
 }
+@media (max-width: 900px) {
+  .content {
+    width: 337.5px;
+  }
+}
+@media (max-width: 850px) {
+  .content {
+    width: 300px;
+  }
+}
 
 .background-1 {
   background-image: url(../img/feedback-1.jpg);
   background-position: center;
+}
+@media (max-width: 690px) {
+  .background-1 {
+    transform: translateY(1px);
+  }
 }
 
 .background-2 {
@@ -689,14 +706,24 @@
   letter-spacing: 0.01em;
   color: #FFFFFF;
 }
-.footer-link:not(:last-child) {
-  margin-right: 30px;
+@media (min-width: 769px) {
+  .footer-link:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .footer-link.active {
   font-weight: 700;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 769px) {
+  .footer-links {
+    display: grid;
+    white-space: nowrap;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 767px) {
   .footer-links {
     display: none;
   }
@@ -705,7 +732,7 @@
 .footer-other {
   display: none;
 }
-@media (max-width: 690px) {
+@media (max-width: 767px) {
   .footer-other {
     display: block;
   }
@@ -747,7 +774,10 @@ body {
   width: 100%;
   height: 100%;
 }
-@media (min-width: 321px) {
+.hero-background img {
+  width: 100%;
+}
+@media (min-width: 426px) {
   .hero-background {
     display: none;
   }
@@ -776,7 +806,12 @@ body {
 }
 @media (max-width: 768px) {
   .container {
-    padding: 0 55px;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 426px) {
+  .container {
+    padding: 0 14px;
   }
 }
 
@@ -879,6 +914,13 @@ body {
 .burger.--active {
   left: 0%;
 }
+@media (max-width: 426px) {
+  .burger {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .header-title {
   white-space: nowrap;
@@ -894,7 +936,7 @@ body {
 .logo {
   color: #000;
 }
-@media (max-width: 320px) {
+@media (max-width: 426px) {
   .logo {
     color: #fff;
   }
@@ -927,7 +969,7 @@ body {
   background-color: #000;
   transition: opacity 0.3s ease-in-out;
 }
-@media (max-width: 320px) {
+@media (max-width: 426px) {
   .burger__line {
     background-color: #fff;
   }
@@ -943,7 +985,7 @@ body {
   background-color: #000;
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
 }
-@media (max-width: 320px) {
+@media (max-width: 426px) {
   .burger-icon::before,
 .burger-icon::after {
     background-color: #fff;
@@ -1109,7 +1151,7 @@ body {
     font-size: 30px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 426px) {
   .hero-title {
     font-size: 28px;
     line-height: 35px;
@@ -1117,8 +1159,12 @@ body {
 }
 @media (max-width: 320px) {
   .hero-title {
-    color: #fff;
     margin-bottom: 5.5px;
+  }
+}
+@media (max-width: 426px) {
+  .hero-title {
+    color: #fff;
   }
 }
 
@@ -1132,7 +1178,7 @@ body {
   opacity: 0.8;
   margin-bottom: 28px;
 }
-@media (max-width: 320px) {
+@media (max-width: 426px) {
   .hero-descr {
     color: #fff;
   }

@@ -51,6 +51,7 @@ opacity: 0.8;
     font-family: 'Source Sans Pro';
 font-style: normal;
 font-weight: 300;
+
 font-size: 18px;
 line-height: 23px;
 /* identical to box height */
@@ -60,21 +61,33 @@ align-items: flex-end;
 letter-spacing: 0.01em;
 
 color: #FFFFFF;
-&:not(:last-child){
-    margin-right: 30px;
+@media(min-width: 769px){
+    &:not(:last-child){
+    
+        margin-right: 30px;
+    }
 }
+
 &.active{
     font-weight: 700;
 }
 }
 .footer-links{
-    @media (max-width: 690px) {
+
+    @media (max-width: 769px) {
+        display: grid;
+        white-space: nowrap;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4,1fr);
+    }
+    @media (max-width: 767px) {
         display: none;
     }
+
 }
 .footer-other{
     display: none;
-    @media (max-width: 690px) {
+    @media (max-width: 767px) {
         display: block;
     }
 }
