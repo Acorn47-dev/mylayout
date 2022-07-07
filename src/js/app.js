@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
     burger.addEventListener("click", (e) => {
         burger_menu.classList.add("--active");
         burger.style.display = "none";
-        burger_menu.style.position = "fixed";
+
     })
     var header_back = document.querySelector(".header-back");
     header_back.addEventListener("click", (e) => {
         burger_menu.classList.remove("--active");
         burger.style.display = "block";
-        burger_menu.style.position = "absolute";
+
     })
 
     var footer_btn = document.querySelector(".footer-btn");
@@ -59,6 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const gotoblockvalue_reviews = gotoblock_reviews.getBoundingClientRect().top + scrollY - document.querySelector('.reviews').offsetHeight;
     footer_link.forEach((el, index) => {
         el.addEventListener("click", (e) => {
+            burger_menu.classList.remove("--active");
+            burger.style.display = "block";
+            burger_menu.style.position = "absolute";
             var current = e.currentTarget;
             footer_link.forEach(el => {
                 el.classList.remove("active");
@@ -80,10 +83,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 scroll(gotoblockvalue_feedback);
             }
         })
-
     })
     blist_item.forEach((el,index) => {
         el.addEventListener("click", (e) => {
+            burger_menu.classList.remove("--active");
+            burger.style.display = "block";
+            burger_menu.style.position = "absolute";
             var current = e.currentTarget;
             blist_item.forEach(el => {
                 el.classList.remove("--active");
