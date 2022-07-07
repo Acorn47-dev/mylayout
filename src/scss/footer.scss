@@ -89,14 +89,14 @@ align-items: flex-end;
         grid-gap: 20px;
         grid-template-columns: repeat(4,1fr);
     }
-    @media (max-width: 767px) {
+    @media (max-width: 862px) {
         display: none;
     }
 
 }
 .footer-other{
     display: none;
-    @media (max-width: 767px) {
+    @media (max-width: 862px) {
         display: block;
     }
 }

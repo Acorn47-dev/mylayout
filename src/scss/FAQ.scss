@@ -96,12 +96,15 @@
     
     opacity: 0.8;
     }
+    .faq-texts__block{
+        margin-bottom: 30px;
+    }
     .faq-images {
         display: grid;
-        grid-gap: 30px;
-        @media(min-width: 1366px){
-            transform: translateY(-8%);
-        }
+grid-gap: 30px;
+width: 100%;
+
+
       
         grid-template-columns: repeat(2,1fr);
     }
@@ -112,6 +115,11 @@
         }
     
     
+    }
+    .test{
+        position: relative;
+        overflow: hidden;
+
     }
     .faq-images-col {
         position: relative;
@@ -127,4 +135,9 @@
             /* For the following settings we set 100%, but it can be higher if needed 
             See the answer update */
         }
+    }
+    .faq-col{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
     }

@@ -1,11 +1,16 @@
 .feedback {
     position: relative;
     overflow: hidden;
-transform: translateY(1px);
+    transform: translateY(1px);
 }
 
 .feedback-content {
     display: flex;
+
+    @media(max-width: 950px) {
+        background-image: url(../img/feedback-1.jpg);
+        background-position: center;
+    }
 
     @media(max-width: 690px) {
         flex-direction: column;
@@ -27,15 +32,22 @@ transform: translateY(1px);
 
 .content {
     width: $maxWidthContainer/3.5;
-    @media(max-width: 900px){
+
+    @media(max-width: 900px) {
         width: $maxWidthContainer/4;
     }
-    @media(max-width: 850px){
+
+    @media(max-width: 850px) {
         width: $maxWidthContainer/4.5;
     }
+
+    @media(max-width: 550px) {
+        width: $maxWidthContainer/2;
+    }
+
     height: 550px;
     display: flex;
-margin: 0 auto;
+    margin: 0 auto;
 
     flex-direction: column;
     align-items: flex-start;
@@ -47,11 +59,18 @@ margin: 0 auto;
 
 }
 
+
 .background-1 {
     background-image: url(../img/feedback-1.jpg);
     background-position: center;
-   
+
+    @media(max-width: 950px) {
+        background-image: none;
+        transform: translateY(1px);
+    }
+
     @media(max-width: 690px) {
+        background-image: url(../img/feedback-1.jpg);
         transform: translateY(1px);
     }
 }
@@ -60,6 +79,13 @@ margin: 0 auto;
     background-image: url(../img/feedback-2.jpg);
     background-position: center;
 
+    @media(max-width: 950px) {
+        background-image: none;
+    }
+
+    @media(max-width: 690px) {
+        background-image: url(../img/feedback-2.jpg);
+    }
 }
 
 .feedback-title {
@@ -129,9 +155,7 @@ margin: 0 auto;
 
 .input-btn {}
 
-.contacts {
-
-}
+.contacts {}
 
 .contacts-title {}
 
@@ -145,7 +169,7 @@ margin: 0 auto;
 .contacts-item {
     display: flex;
     align-items: flex-start;
-justify-content: flex-start;
+    justify-content: flex-start;
 
     max-width: 343px;
     margin-bottom: 35px;
@@ -157,9 +181,9 @@ justify-content: flex-start;
         font-weight: 700;
         font-size: 17px;
         line-height: 21px;
-        
+
         letter-spacing: 0.035em;
-width: 100%;
+        width: 100%;
         color: #FFFFFF;
     }
 
