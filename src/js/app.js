@@ -69,22 +69,22 @@ document.addEventListener("DOMContentLoaded", function () {
             current.classList.add("active");
             if (index == 0) {
                 scroll(gotoblockvalue_hero);
-            }else if(index == 1){
+            } else if (index == 1) {
                 scroll(gotoblockvalue_about);
-            }else if(index == 2){
+            } else if (index == 2) {
                 scroll(gotoblockvalue_advantages);
-            }else if(index == 3){
+            } else if (index == 3) {
                 scroll(gotoblockvalue_price);
-            }else if(index == 4){
+            } else if (index == 4) {
                 scroll(gotoblockvalue_reviews);
-            }else if(index == 5){
+            } else if (index == 5) {
                 scroll(gotoblockvalue_faq);
-            }else if(index == 6){
+            } else if (index == 6) {
                 scroll(gotoblockvalue_feedback);
             }
         })
     })
-    blist_item.forEach((el,index) => {
+    blist_item.forEach((el, index) => {
         el.addEventListener("click", (e) => {
             burger_menu.classList.remove("--active");
             burger.style.display = "block";
@@ -96,17 +96,17 @@ document.addEventListener("DOMContentLoaded", function () {
             current.classList.add("--active");
             if (index == 0) {
                 scroll(gotoblockvalue_hero);
-            }else if(index == 1){
+            } else if (index == 1) {
                 scroll(gotoblockvalue_about);
-            }else if(index == 2){
+            } else if (index == 2) {
                 scroll(gotoblockvalue_advantages);
-            }else if(index == 3){
+            } else if (index == 3) {
                 scroll(gotoblockvalue_price);
-            }else if(index == 4){
+            } else if (index == 4) {
                 scroll(gotoblockvalue_reviews);
-            }else if(index == 5){
+            } else if (index == 5) {
                 scroll(gotoblockvalue_faq);
-            }else if(index == 6){
+            } else if (index == 6) {
                 scroll(gotoblockvalue_feedback);
             }
         })
@@ -125,9 +125,12 @@ document.addEventListener("DOMContentLoaded", function () {
             left: 0,
             behavior: 'smooth'
         });
-        
+
     });
-    
-   
+    document.querySelector(".hero-title-col").style.left = document.querySelector(".first-item").offsetLeft + "px";
+    window.onresize = function (event) {
+        document.querySelector(".hero-title-col").style.left = document.querySelector(".first-item").offsetLeft + "px";
+    };
+
 
 })

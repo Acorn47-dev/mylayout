@@ -4,7 +4,7 @@ $md2: 768px;
 $md3: 320px;
 
 @import "fonts";
-@import "aboutus";
+@import "about";
 @import "advantages";
 @import "price";
 @import "reviews";
@@ -194,10 +194,10 @@ z-index: 100;
     }
 
     @media(max-width:1151px) {
-        left: -100%;
+        margin-left: -100%;
     }
     &.--active{
-        left: 0%;
+        margin-left: 0%;
     }
     body.--active{
         left: 0%;
@@ -223,6 +223,10 @@ z-index: 100;
     letter-spacing: 0.030em;
     line-height: 38px;
     text-transform: uppercase;
+
+}
+
+.hero-title-col{
 
 }
 
@@ -355,22 +359,20 @@ left: 0;
 
 //
 .hero {
+height: 600px;
 
     @media(max-width: $md1) {
-        flex-direction: row-reverse;
-        margin-right: 105px;
-        margin-bottom: 250px;
+        height: 490px;
+    }
+    @media(max-width: $md2) {
+        height: 360px;
+    }
+    @media(max-width: 600px) {
+        height: 270px;
     }
     
 
-    @media(min-width: $md1) {
-        flex-direction: row-reverse;
-        margin-right: 105px;
-
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-    }
+    width: 100%;
     @media(max-width: 1152px){
         flex-direction:row-reverse;
     }
@@ -386,7 +388,20 @@ left: 0;
 
 }
 
+.hero-title-col{
+    position: absolute;
+
+
+width: 100%;
+    top:0%;
+    &.burger-active{
+left: 0px;
+        right: 0;
+    }
+}
+
 .hero-col {
+    
     @media(min-width: 1333px){
         &:not(:last-child) {
         
@@ -464,6 +479,8 @@ left: 0;
     @media(max-width: 426px) {
         color: #fff;
     }
+
+
 }
 
 .hero-descr {

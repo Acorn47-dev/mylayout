@@ -56,7 +56,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
 }
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .about-texts {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -419,20 +419,31 @@
 }
 
 .faq {
-  margin-bottom: 50px;
+  margin-bottom: 110px;
 }
 @media (max-width: 1153px) {
   .faq {
-    margin-top: 100px;
+    margin-top: 0px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 1101px) {
   .faq {
-    margin-top: 100px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 426px) {
+  .faq {
+    margin-top: 180px;
+  }
+}
+@media (max-width: 370px) {
+  .faq {
+    margin-top: 50px;
   }
 }
 .faq-content {
   display: flex;
+  align-items: flex-end;
 }
 
 .texts-col {
@@ -462,7 +473,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
-  margin-right: 30px;
 }
 @media (max-width: 450px) {
   .faq-texts {
@@ -500,26 +510,15 @@
   opacity: 0.8;
 }
 
-.faq-texts__block {
-  margin-bottom: 30px;
-}
-
 .faq-images {
   display: grid;
   grid-gap: 30px;
-  width: 100%;
   grid-template-columns: repeat(2, 1fr);
 }
-
 @media (max-width: 1101px) {
   .faq-images {
     display: none;
   }
-}
-
-.test {
-  position: relative;
-  overflow: hidden;
 }
 
 .faq-images-col {
@@ -531,7 +530,7 @@
   position: relative;
   overflow: hidden;
   /* For the following settings we set 100%, but it can be higher if needed 
-  See the answer update */
+      See the answer update */
 }
 @media (max-width: 1152px) {
   .faq-images-col img {
@@ -539,9 +538,29 @@
   }
 }
 
-.faq-col {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+.faq-texts__block {
+  margin-bottom: 35px;
+}
+
+.faq-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.faq-image img {
+  min-height: 100%;
+  min-width: 100%;
+}
+@media (max-width: 1333px) {
+  .faq-image__big {
+    height: 479px;
+  }
+}
+@media (max-width: 1333px) {
+  .faq-image__small {
+    height: 232px;
+  }
 }
 
 .feedback {
@@ -995,11 +1014,11 @@ body {
 }
 @media (max-width: 1151px) {
   .burger {
-    left: -100%;
+    margin-left: -100%;
   }
 }
 .burger.--active {
-  left: 0%;
+  margin-left: 0%;
 }
 .burger body.--active {
   left: 0%;
@@ -1145,20 +1164,23 @@ body {
   background: #fff;
 }
 
+.hero {
+  height: 600px;
+  width: 100%;
+}
 @media (max-width: 1152px) {
   .hero {
-    flex-direction: row-reverse;
-    margin-right: 105px;
-    margin-bottom: 250px;
+    height: 490px;
   }
 }
-@media (min-width: 1152px) {
+@media (max-width: 768px) {
   .hero {
-    flex-direction: row-reverse;
-    margin-right: 105px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+    height: 360px;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    height: 270px;
   }
 }
 @media (max-width: 1152px) {
@@ -1176,6 +1198,16 @@ body {
     flex-direction: auto;
     margin-right: 0;
   }
+}
+
+.hero-title-col {
+  position: absolute;
+  width: 100%;
+  top: 0%;
+}
+.hero-title-col.burger-active {
+  left: 0px;
+  right: 0;
 }
 
 @media (min-width: 1333px) {

@@ -1,70 +1,88 @@
 .faq {
-    margin-bottom: 50px;
-    @media(max-width: 1153px){
-        margin-top: 100px;
+    margin-bottom: 110px;
+
+
+
+    @media(max-width: 1153px) {
+        margin-top: 0px;
     }
-    @media(max-width: $md3){
-        margin-top: 100px;
+
+    @media(max-width: 1101px) {
+        margin-top: 0px;
     }
-    
-    
-        // .faq__title
-    
-        &__title {
-        }
-        
+
+    @media(max-width: 426px) {
+        margin-top: 180px;
     }
-    .container {
+
+    @media(max-width: 370px) {
+        margin-top: 50px;
     }
-    .faq-content {
-        display: flex;
-    }
-    .faq-col {
-        
-    }
-    .texts-col{
-        margin-right: 45px;
-    }
-    
-    .main-title {
-        font-family: 'Source Sans Pro';
+
+
+
+    // .faq__title
+
+    &__title {}
+
+}
+
+.container {}
+
+.faq-content {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.faq-col {}
+
+.texts-col {
+    margin-right: 45px;
+}
+
+.main-title {
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
     line-height: 38px;
     /* identical to box height */
-    
+
     display: flex;
     align-items: center;
     letter-spacing: 0.035em;
-    
+
     /* Black */
-    
+
     color: #463538;
     margin-bottom: 55px;
+}
+
+.title-company {
+    white-space: nowrap;
+}
+
+.faq-texts {}
+
+.faq-texts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+
+    // .faq-texts__block
+    @media(max-width: 450px) {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .title-company {
-        white-space: nowrap;
+
+    &__block {
+        max-width: 645px;
     }
-    .faq-texts {
-    
-    }
-    .faq-texts {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap: 30px;
-        // .faq-texts__block
-        @media(max-width: 450px){
-            grid-template-columns: repeat(1,1fr);
-        }
-        &__block {
-           max-width: 645px;
-        }
-        margin-right: 30px;
-    }
-    .mini-title {
+}
+
+.mini-title {
     margin-bottom: 14px;
-    
+
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 900;
@@ -73,71 +91,109 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.035em;
-    
+
     /* Black */
-    
+
     color: #463538;
-    }
-    .subtitle {
-    
-    
+}
+
+.subtitle {
+
+
     /* Text */
-    
+
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
     letter-spacing: 0.035em;
-    
+
     /* Black */
-    
+
     color: #463538;
-    
+
     opacity: 0.8;
+}
+
+.faq-images {
+    display: grid;
+    grid-gap: 30px;
+
+    @media(min-width: 1366px) {}
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.faq-images {
+    @media(max-width:1101px) {
+        display: none;
+
     }
-    .faq-texts__block{
-        margin-bottom: 30px;
-    }
-    .faq-images {
-        display: grid;
-grid-gap: 30px;
-width: 100%;
 
 
-      
-        grid-template-columns: repeat(2,1fr);
-    }
-    .faq-images {
-        @media(max-width:1101px){
-            display: none;
-    
+
+}
+
+.faq-images-col {
+    position: relative;
+    overflow: hidden;
+    min-width: 239px;
+
+    img {
+        @media(max-width: $md1) {
+            margin: 0px 0px 0px -30%;
         }
-    
-    
-    }
-    .test{
-        position: relative;
-        overflow: hidden;
 
-    }
-    .faq-images-col {
         position: relative;
         overflow: hidden;
-        min-width: 239px;
-  
-        img{
-            @media(max-width: $md1){
-               margin:0px 0px 0px -30%;
-            }
-           position: relative;
-           overflow: hidden;
-            /* For the following settings we set 100%, but it can be higher if needed 
+        /* For the following settings we set 100%, but it can be higher if needed 
             See the answer update */
+
+    }
+}
+
+.faq-texts__block {
+    margin-bottom: 35px;
+}
+
+.faq-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        min-height: 100%;
+        min-width: 100%;
+
+    }
+
+    &__big {
+        @media(max-width: 1333px){
+            height: 479px;
+        }
+       
+    }
+
+    &__small {
+        @media(max-width: 1333px){
+            height: 232px;
         }
     }
-    .faq-col{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        
-    }
+}
+
+// &__img{
+//     z-index: -1;
+//     width: 400px;
+//     position: relative;
+//     height: 383px;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     overflow: hidden;
+// }
+// img{
+//     min-height: 100%;
+//     min-width: 100%;
+
+// }
