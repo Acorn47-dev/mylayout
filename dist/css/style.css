@@ -65,6 +65,12 @@
   max-width: 645px;
 }
 
+@media (min-width: 600px) {
+  .special-block {
+    margin-top: 25px;
+  }
+}
+
 .mini-title {
   margin-bottom: 14px;
   font-family: "Source Sans Pro";
@@ -431,16 +437,6 @@
     margin-top: 0px;
   }
 }
-@media (max-width: 426px) {
-  .faq {
-    margin-top: 180px;
-  }
-}
-@media (max-width: 370px) {
-  .faq {
-    margin-top: 50px;
-  }
-}
 .faq-content {
   display: flex;
   align-items: flex-end;
@@ -620,6 +616,11 @@
 @media (max-width: 550px) {
   .content {
     width: 675px;
+  }
+}
+@media (max-width: 360px) {
+  .content {
+    width: 300px;
   }
 }
 
@@ -1004,6 +1005,11 @@ body {
   width: 100%;
   z-index: 100;
 }
+@media (max-width: 700px) {
+  .burger {
+    max-width: 100%;
+  }
+}
 .burger-content {
   padding: 60px 41px;
 }
@@ -1166,6 +1172,7 @@ body {
 
 .hero {
   height: 600px;
+  position: relative;
   width: 100%;
 }
 @media (max-width: 1152px) {
@@ -1202,22 +1209,20 @@ body {
 
 .hero-title-col {
   position: absolute;
-  width: 100%;
   top: 0%;
+  width: 100%;
+  left: 50%;
 }
-.hero-title-col.burger-active {
-  left: 0px;
-  right: 0;
+@media (max-width: 1100px) {
+  .hero-title-col.burger-active {
+    left: 34%;
+    width: auto;
+  }
 }
 
 @media (min-width: 1333px) {
   .hero-col:not(:last-child) {
     margin-right: 123px;
-  }
-}
-@media (max-width: 1152px) {
-  .hero-col {
-    margin-right: 85px;
   }
 }
 @media (max-width: 600px) {
@@ -1260,8 +1265,6 @@ body {
   font-weight: 900;
   font-size: 50px;
   line-height: 63px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.035em;
   text-transform: uppercase;
   margin-bottom: 28px;
@@ -1292,6 +1295,14 @@ body {
 @media (max-width: 426px) {
   .hero-title {
     color: #fff;
+  }
+}
+@media (max-width: 888px) {
+  .burger-active .hero-title {
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: 0.035em;
   }
 }
 

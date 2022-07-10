@@ -73,6 +73,11 @@ margin-bottom: 55px;
        max-width: 645px;
     }
 }
+.special-block{
+    @media(min-width: 600px){
+        margin-top: 25px;
+    }
+}
 .mini-title {
 margin-bottom: 14px;
 

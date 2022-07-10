@@ -10,19 +10,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var footer_link = document.querySelectorAll(".footer-link");
 
-
+   
     var burger = document.querySelector(".burger-icon");
+    var hero_col_image = document.querySelector(".hero-col-image");
+    var hero_title_col = document.querySelector(".hero-title-col");
     var burger_menu = document.querySelector(".burger");
     burger.addEventListener("click", (e) => {
         burger_menu.classList.add("--active");
         burger.style.display = "none";
+        hero_col_image.style.display = "none";
 
+        checkwidth();
+        hero_title_col.classList.add("burger-active");
+        
     })
     var header_back = document.querySelector(".header-back");
     header_back.addEventListener("click", (e) => {
         burger_menu.classList.remove("--active");
         burger.style.display = "block";
-
+        hero_col_image.style.display = "block";
+        hero_title_col.classList.remove("burger-active");
+        checkwidth();
+        document.querySelector(".hero-title-col").style.left = document.querySelector(".first-item").offsetLeft + "px";
     })
 
     var footer_btn = document.querySelector(".footer-btn");
@@ -127,10 +136,33 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     });
-    document.querySelector(".hero-title-col").style.left = document.querySelector(".first-item").offsetLeft + "px";
-    window.onresize = function (event) {
+    if (!hero_title_col.classList.contains("burger-active")) {
         document.querySelector(".hero-title-col").style.left = document.querySelector(".first-item").offsetLeft + "px";
-    };
+        window.onresize = function (event) {
+            if (!hero_title_col.classList.contains("burger-active")) {
+                document.querySelector(".hero-title-col").style.left = document.querySelector(".first-item").offsetLeft + "px";
+            } else {
+                checkwidth();
+            }
 
+        };
+    }
+
+    function checkwidth() {
+        var width = window.innerWidth;
+        if (width < 1114) {
+            hero_title_col.style.left = "36%";
+        }
+        if (width < 768) {
+            hero_title_col.style.left = "47%";
+        }
+        if (width > 1114) {
+            hero_title_col.classList.remove("burger-active");
+            burger_menu.classList.remove("--active");
+            burger.style.display = "block";
+            hero_col_image.style.display = "block";
+            hero_title_col.style.left = "47%";
+        }  
+    }
 
 })
