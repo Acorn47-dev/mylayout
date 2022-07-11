@@ -1297,7 +1297,7 @@ body {
     color: #fff;
   }
 }
-@media (max-width: 888px) {
+@media (max-width: 888px) and (min-width: 700px) {
   .burger-active .hero-title {
     font-weight: 900;
     font-size: 34px;
