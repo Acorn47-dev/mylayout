@@ -150,12 +150,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function checkwidth() {
         var width = window.innerWidth;
-        if (width < 1114) {
-            hero_title_col.style.left = "36%";
+        if (width > 700) {
+            if (width < 1114) {
+                hero_title_col.style.left = "36%";
+            }
+            if (width < 768) {
+                hero_title_col.style.left = "47%";
+            }
+            
         }
-        if (width < 768) {
-            hero_title_col.style.left = "47%";
-        }
+
         if (width > 1114) {
             hero_title_col.classList.remove("burger-active");
             burger_menu.classList.remove("--active");
