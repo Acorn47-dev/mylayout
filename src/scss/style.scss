@@ -468,6 +468,7 @@ position: relative;
     color: #463538;
     white-space: nowrap;
     
+    
     @media(max-width: 530px) {
         font-size: 40px;
     }
@@ -492,12 +493,13 @@ position: relative;
 
     .burger-active &{
         @media(max-width: 888px){
-
-font-weight: 900;
-font-size: 34px;
-line-height: 43px;
-
-letter-spacing: 0.035em;
+            @media(min-width: 700px){
+                font-weight: 900;
+                font-size: 34px;
+                line-height: 43px;
+                
+                letter-spacing: 0.035em;
+            }
         }
     }
 

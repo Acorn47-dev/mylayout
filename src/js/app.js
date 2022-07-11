@@ -18,8 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
     burger.addEventListener("click", (e) => {
         burger_menu.classList.add("--active");
         burger.style.display = "none";
-        hero_col_image.style.display = "none";
-
+        var width = window.innerWidth;
+        if (width > 700) {
+            hero_col_image.style.display = "none";
+        }
         checkwidth();
         hero_title_col.classList.add("burger-active");
         
@@ -28,9 +30,13 @@ document.addEventListener("DOMContentLoaded", function () {
     header_back.addEventListener("click", (e) => {
         burger_menu.classList.remove("--active");
         burger.style.display = "block";
-        hero_col_image.style.display = "block";
+       
         hero_title_col.classList.remove("burger-active");
         checkwidth();
+        var width = window.innerWidth;
+        if (width > 700) {
+            hero_col_image.style.display = "block";
+        }
         document.querySelector(".hero-title-col").style.left = document.querySelector(".first-item").offsetLeft + "px";
     })
 
@@ -152,7 +158,10 @@ document.addEventListener("DOMContentLoaded", function () {
         var width = window.innerWidth;
         if (width > 700) {
             if (width < 1114) {
-                hero_title_col.style.left = "36%";
+                hero_title_col.style.left = "35%";
+            }
+            if (width < 800) {
+                hero_title_col.style.left = "45%";
             }
             if (width < 768) {
                 hero_title_col.style.left = "47%";
@@ -165,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
             burger_menu.classList.remove("--active");
             burger.style.display = "block";
             hero_col_image.style.display = "block";
-            hero_title_col.style.left = "47%";
+
         }  
     }
 
