@@ -44,6 +44,7 @@
     @media(max-width: 550px) {
         width: $maxWidthContainer/2;
     }
+
     @media(max-width: 360px) {
         width: $maxWidthContainer/4.5;
     }
@@ -113,6 +114,9 @@
     outline: none;
     line-height: 18px;
     border: none;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
     letter-spacing: 0.035em;
     border-bottom: 1px solid #fff;
     opacity: 0.7;
