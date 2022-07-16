@@ -677,10 +677,14 @@
   outline: none;
   line-height: 18px;
   border: none;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
   letter-spacing: 0.035em;
   border-bottom: 1px solid #fff;
   opacity: 0.7;
   color: #FFFFFF;
+  -webkit-appearance: none;
 }
 .order-service-input::placeholder {
   color: #FFFFFF;
