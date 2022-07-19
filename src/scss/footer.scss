@@ -1,25 +1,28 @@
-.footer{
+.footer {
     position: relative;
     z-index: 2;
     width: 100%;
-height: 212px;
-background: #262222;
-@media(max-width: $md1){
-    background: #262223;
+    height: 212px;
+    background: #262222;
+
+    @media(max-width: $md1) {
+        background: #262223;
+    }
 }
-}
+
 .footer-content {
     display: flex;
-
-justify-content: space-between;
+    justify-content: space-between;
 }
+
 .footer-col {
     padding-top: 80px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-.footer-main{
+
+.footer-main {
     white-space: nowrap;
     padding-right: 30px;
     display: flex;
@@ -27,75 +30,73 @@ justify-content: space-between;
     flex-direction: column;
     align-items: start;
     text-align: start;
-
 }
+
 .footer-logo {
     font-family: 'Source Sans Pro';
-font-weight: 900;
-font-size: 30px;
-line-height: 38px;
-margin-bottom: 16px;
-letter-spacing: 0.035em;
-text-transform: uppercase;
-color: #FFFFFF;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 16px;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
+
 .footer-copy {
     font-family: 'Source Sans Pro';
-
-font-weight: 400;
-font-size: 13px;
-line-height: 16px;
-
-letter-spacing: 0.01em;
-color: #FFFFFF;
-opacity: 0.8;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    opacity: 0.8;
 }
+
 .footer-link {
-color: inherit;
+    color: inherit;
 }
-.footer-item{
+
+.footer-item {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 300;
-    
     font-size: 18px;
     line-height: 23px;
-    /* identical to box height */
-    
-    
     letter-spacing: 0.01em;
-    
     color: #FFFFFF;
-    
-    
-    &.active{
+
+    &.active {
         font-weight: 700;
     }
+
     color: #FFFFFF;
     display: flex;
-align-items: flex-end;
-    @media(min-width: 769px){
-        &:not(:last-child){
-        
+    align-items: flex-end;
+
+    @media(min-width: 769px) {
+        &:not(:last-child) {
             margin-right: 30px;
         }
     }
 }
-.footer-links{
 
+.footer-links {
     @media (max-width: 769px) {
         display: grid;
         white-space: nowrap;
         grid-gap: 20px;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
+
     @media (max-width: 862px) {
         display: none;
     }
-
 }
-.footer-other{
+
+.footer-other {
     display: none;
+
     @media (max-width: 862px) {
         display: block;
     }

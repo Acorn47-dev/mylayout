@@ -2,7 +2,6 @@ $maxWidthContainer: 1350px;
 $md1: 1152px;
 $md2: 768px;
 $md3: 320px;
-
 @import "fonts";
 @import "about";
 @import "advantages";
@@ -11,14 +10,13 @@ $md3: 320px;
 @import "FAQ";
 @import "feedback";
 @import "footer";
+
 .wrapper {
     min-width: 100%;
     display: flex;
     margin: 0 auto;
     min-height: 100vh;
     position: relative;
-
-
     overflow: hidden;
     flex-direction: column;
     max-width: $maxWidthContainer;
@@ -39,7 +37,6 @@ body {
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-
 }
 
 .hero-background {
@@ -49,14 +46,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    img{
+
+    img {
         width: 100%;
     }
 
     @media(min-width: 425px + 1px) {
         display: none;
     }
-   
 }
 
 .header {
@@ -72,24 +69,20 @@ body {
     max-width: $maxWidthContainer;
     margin: 0 auto;
     position: relative;
-
     padding: 0 16px;
-    @media(max-width: $md1){
+
+    @media(max-width: $md1) {
         padding: 0 56px;
     }
-    @media(max-width: $md2){
+
+    @media(max-width: $md2) {
         padding: 0 15px;
     }
-    @media(max-width: 426px){
+
+    @media(max-width: 426px) {
         padding: 0 14px;
     }
-
-
 }
-
-// header (начало)
-// .header__container
-.header-nav {}
 
 .nav {
     position: relative;
@@ -99,31 +92,21 @@ body {
         align-items: flex-end;
         justify-content: flex-end;
     }
-
-
 }
 
-.nav-list {}
-
-
-
 .list {
-
     display: flex;
     justify-content: flex-end;
 
     // .list__item
-
     @media(max-width:1151px) {
         display: none;
     }
 
     &__item {
-
         &:not(:last-child) {
             margin: 0px 70px 0px 0px;
         }
-
     }
 }
 
@@ -134,31 +117,32 @@ body {
 
 .item-icon {
     margin: 0px 8px 0px 0px;
-
 }
-.burger-header{
+
+.burger-header {
     display: flex;
     width: 95%;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-.header-back{
+
+.header-back {
     transform: rotate(-90deg);
     display: none;
-    @media(max-width: 1152px){
+
+    @media(max-width: 1152px) {
         display: block;
     }
 }
-.arrow-btn{
+
+.arrow-btn {
     width: 33px;
     height: 33px;
-
     background: #494949;
-border: none;
-background-image: url(../img/arrow-icon.svg);
-background-repeat: no-repeat;
-background-position: center;
-border-radius: 2px;
-
+    border: none;
+    background-image: url(../img/arrow-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2px;
 }
 
 .item-link {}
@@ -171,7 +155,8 @@ border-radius: 2px;
     letter-spacing: 0.066em;
     text-decoration: none;
     color: #463538;
-    &:hover{
+
+    &:hover {
         text-decoration: underline;
     }
 }
@@ -185,12 +170,15 @@ border-radius: 2px;
     max-width: 335px;
     transition: all 0.3s;
     width: 100%;
-z-index: 100;
-@media(max-width: 700px) {
-    max-width: 100%;
-}
+    z-index: 100;
+
+    @media(max-width: 700px) {
+        max-width: 100%;
+    }
+
     &-content {
         padding: 60px 41px;
+
         @media(max-width: $md2) {
             padding: 60px 0px 60px 10px;
         }
@@ -199,23 +187,22 @@ z-index: 100;
     @media(max-width:1151px) {
         margin-left: -100%;
     }
-    &.--active{
+
+    &.--active {
         margin-left: 0%;
     }
-    body.--active{
+
+    body.--active {
         left: 0%;
         background: red;
     }
-    
-    @media(max-width: 426px){
+
+    @media(max-width: 426px) {
         max-width: 100%;
         width: 100%;
         height: 100%;
     }
-
 }
-
-
 
 .header-title {
     white-space: nowrap;
@@ -226,12 +213,9 @@ z-index: 100;
     letter-spacing: 0.030em;
     line-height: 38px;
     text-transform: uppercase;
-
 }
 
-.hero-title-col{
-
-}
+.hero-title-col {}
 
 .logo {
     color: #000;
@@ -246,26 +230,23 @@ z-index: 100;
 }
 
 .burger-list {
-
     margin-bottom: 51px;
 }
-.burger-link{
+
+.burger-link {
     color: inherit;
 }
 
 .burger-icon {
-
     position: relative;
     width: 25px;
     height: 18px;
     border: none;
-
-
-top: 11px;
-left: 0;
+    top: 11px;
+    left: 0;
 }
 
-.burger__line{
+.burger__line {
     position: absolute;
     left: 0;
     top: 50%;
@@ -273,40 +254,47 @@ left: 0;
     width: 100%;
     height: 4px;
     background-color: #000;
-    @media(max-width: 426px){
+
+    @media(max-width: 426px) {
         background-color: #fff;
     }
+
     transition: opacity 0.3s ease-in-out;
 }
+
 .burger-icon::before,
-.burger-icon::after{
+.burger-icon::after {
     content: "";
     position: absolute;
     left: 0;
     width: 100%;
     height: 4px;
     background-color: #000;
-    @media(max-width: 426px){
+
+    @media(max-width: 426px) {
         background-color: #fff;
     }
-    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
+
+    transition: transform 0.3s ease-in-out,
+    top 0.3s ease-in-out,
+    bottom 0.3s ease-in-out;
 }
 
-.burger-icon::before{
+.burger-icon::before {
     top: 0;
 }
-.burger-icon::after{
+
+.burger-icon::after {
     bottom: 0;
 }
 
 .header-adaptive {
-    
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     display: flex;
+
     @media(min-width: 1151px) {
-       
         display: none;
     }
 }
@@ -327,7 +315,8 @@ left: 0;
     }
 
     color: #FFFFFF;
-    &:hover{
+
+    &:hover {
         font-weight: 700;
     }
 }
@@ -335,7 +324,6 @@ left: 0;
 .--active {
     font-weight: 700;
 }
-
 
 .feedback-btn {
     border: 2px solid #fff;
@@ -350,23 +338,21 @@ left: 0;
     cursor: pointer;
     color: #FFFFFF;
     transition: all 0.3s ease 0s;
-    &:hover{
+
+    &:hover {
         color: #000;
         background: #fff;
     }
 }
 
-
-// header (конец)
-
-
-//
 .hero {
-height: 600px;
-position: relative;
+    height: 600px;
+    position: relative;
+
     @media(max-width: $md1) {
         height: 490px;
     }
+
     @media(max-width: $md2) {
         height: 360px;
     }
@@ -374,13 +360,14 @@ position: relative;
     @media(max-width: 600px) {
         height: 270px;
     }
-    
 
     width: 100%;
-    @media(max-width: 1152px){
-        flex-direction:row-reverse;
+
+    @media(max-width: 1152px) {
+        flex-direction: row-reverse;
     }
-    @media(max-width:$md2){
+
+    @media(max-width:$md2) {
         margin-bottom: 0;
     }
 
@@ -388,21 +375,16 @@ position: relative;
         flex-direction: auto;
         margin-right: 0;
     }
-
-
 }
 
-.hero-title-col{
+.hero-title-col {
     position: absolute;
-
-
-
-    top:0%;
+    top: 0%;
     width: 100%;
     left: 50%;
 
-    &.burger-active{
-        @media(max-width: 1100px){
+    &.burger-active {
+        @media(max-width: 1100px) {
             left: 34%;
             width: auto;
         }
@@ -410,17 +392,13 @@ position: relative;
 }
 
 .hero-col {
-
-
-    @media(min-width: 1333px){
+    @media(min-width: 1333px) {
         &:not(:last-child) {
-        
             margin-right: 123px;
         }
     }
-    @media(max-width: 1152px){
 
-    }
+    @media(max-width: 1152px) {}
 
     @media(max-width:600px) {
         &-col-image {
@@ -428,15 +406,14 @@ position: relative;
         }
 
         margin-right: 0;
-
     }
 }
 
 .hero-image {
     margin-top: 135px;
+
     @media(min-width: 1920px) {
         padding-left: 135px;
-
     }
 
     @media(max-width:$md2) {
@@ -456,19 +433,15 @@ position: relative;
 
 .hero-title {
     font-family: 'Source Sans Pro';
-
-
     font-weight: 900;
     font-size: 50px;
     line-height: 63px;
-
     letter-spacing: 0.035em;
     text-transform: uppercase;
     margin-bottom: 28px;
     color: #463538;
     white-space: nowrap;
-    
-    
+
     @media(max-width: 530px) {
         font-size: 40px;
     }
@@ -476,7 +449,6 @@ position: relative;
     @media(max-width: 430px) {
         font-size: 30px;
     }
-
 
     @media(max-width: 426px) {
         //    color:#fff;
@@ -487,22 +459,21 @@ position: relative;
     @media(max-width: $md3) {
         margin-bottom: 5.5px;
     }
+
     @media(max-width: 426px) {
         color: #fff;
     }
 
-    .burger-active &{
-        @media(max-width: 888px){
-            @media(min-width: 700px){
+    .burger-active & {
+        @media(max-width: 888px) {
+            @media(min-width: 700px) {
                 font-weight: 900;
                 font-size: 34px;
                 line-height: 43px;
-                
                 letter-spacing: 0.035em;
             }
         }
     }
-
 }
 
 .hero-descr {
@@ -535,7 +506,8 @@ position: relative;
     cursor: pointer;
     background: #B71833;
     transition: all 0.3s ease 0s;
-    &:hover{
+
+    &:hover {
         background: #FFD43A;
     }
 }

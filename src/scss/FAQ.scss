@@ -1,8 +1,6 @@
 .faq {
     margin-bottom: 110px;
 
-
-
     @media(max-width: 1153px) {
         margin-top: 0px;
     }
@@ -10,26 +8,12 @@
     @media(max-width: 1101px) {
         margin-top: 0px;
     }
-
-
-
-
-
-    // .faq__title
-
-    &__title {}
-
 }
-
-.container {}
 
 .faq-content {
     display: flex;
     align-items: flex-end;
-
 }
-
-.faq-col {}
 
 .texts-col {
     margin-right: 45px;
@@ -41,14 +25,9 @@
     font-weight: 900;
     font-size: 30px;
     line-height: 38px;
-    /* identical to box height */
-
     display: flex;
     align-items: center;
     letter-spacing: 0.035em;
-
-    /* Black */
-
     color: #463538;
     margin-bottom: 55px;
 }
@@ -57,14 +36,11 @@
     white-space: nowrap;
 }
 
-.faq-texts {}
-
 .faq-texts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
 
-    // .faq-texts__block
     @media(max-width: 450px) {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -76,7 +52,6 @@
 
 .mini-title {
     margin-bottom: 14px;
-
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 900;
@@ -85,28 +60,17 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.035em;
-
-    /* Black */
-
     color: #463538;
 }
 
 .subtitle {
-
-
-    /* Text */
-
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
     letter-spacing: 0.035em;
-
-    /* Black */
-
     color: #463538;
-
     opacity: 0.8;
 }
 
@@ -122,11 +86,7 @@
 .faq-images {
     @media(max-width:1101px) {
         display: none;
-
     }
-
-
-
 }
 
 .faq-images-col {
@@ -141,9 +101,6 @@
 
         position: relative;
         overflow: hidden;
-        /* For the following settings we set 100%, but it can be higher if needed 
-            See the answer update */
-
     }
 }
 
@@ -160,34 +117,17 @@
     img {
         min-height: 100%;
         min-width: 100%;
-
     }
 
     &__big {
-        @media(max-width: 1333px){
+        @media(max-width: 1333px) {
             height: 479px;
         }
-       
     }
 
     &__small {
-        @media(max-width: 1333px){
+        @media(max-width: 1333px) {
             height: 232px;
         }
     }
 }
-
-// &__img{
-//     z-index: -1;
-//     width: 400px;
-//     position: relative;
-//     height: 383px;
-//     background-position: center center;
-//     background-repeat: no-repeat;
-//     overflow: hidden;
-// }
-// img{
-//     min-height: 100%;
-//     min-width: 100%;
-
-// }

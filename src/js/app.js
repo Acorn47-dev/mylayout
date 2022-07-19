@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     burger.addEventListener("click", (e) => {
         burger_menu.classList.add("--active");
         burger.style.display = "none";
+
         var width = window.innerWidth;
         if (width > 700) {
             hero_col_image.style.display = "none";
@@ -28,6 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     var header_back = document.querySelector(".header-back");
     header_back.addEventListener("click", (e) => {
+        close_burger();
+    })
+    function close_burger() {
         burger_menu.classList.remove("--active");
         burger.style.display = "block";
        
@@ -37,9 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (width > 700) {
             hero_col_image.style.display = "block";
         }
-        document.querySelector(".hero-title-col").style.left = document.querySelector(".first-item").offsetLeft + "px";
-    })
-
+        document.querySelector(".hero-title-col").style.left = document.querySelector(".first-item").offsetLeft + "px"; 
+    }
     var footer_btn = document.querySelector(".footer-btn");
     footer_btn.addEventListener("click", (e) => {
         window.scroll({
@@ -127,13 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
 
     })
-    function scroll(value) {
-        window.scroll({
-            top: value,
-            left: 0,
-            behavior: 'smooth'
-        })
-    }
+
     hero_btn.addEventListener("click", function () {
         window.scroll({
             top: gotoblockvalue_about,
@@ -154,6 +151,11 @@ document.addEventListener("DOMContentLoaded", function () {
         };
     }
 
+    function scroll(value) {
+        close_burger();
+        alert(value)
+        window.scrollTo(0, 1555);
+    }
     function checkwidth() {
         var width = window.innerWidth;
         if (width > 700) {
