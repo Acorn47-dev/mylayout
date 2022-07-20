@@ -13,9 +13,24 @@
     margin-top: 0px;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 436px) {
   .about {
     margin-top: 180px;
+  }
+}
+@media (max-width: 426px) {
+  .about {
+    margin-top: 170px;
+  }
+}
+@media (max-width: 406px) {
+  .about {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 390px) {
+  .about {
+    margin-top: 90px;
   }
 }
 @media (max-width: 370px) {
@@ -23,6 +38,17 @@
     margin-top: 50px;
   }
 }
+@media (max-width: 350px) {
+  .about {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 320px) {
+  .about {
+    margin-top: 0px;
+  }
+}
+
 .about-content {
   display: flex;
   align-items: flex-end;
@@ -38,11 +64,9 @@
   font-weight: 900;
   font-size: 30px;
   line-height: 38px;
-  /* identical to box height */
   display: flex;
   align-items: center;
   letter-spacing: 0.035em;
-  /* Black */
   color: #463538;
   margin-bottom: 55px;
 }
@@ -81,19 +105,16 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.035em;
-  /* Black */
   color: #463538;
 }
 
 .subtitle {
-  /* Text */
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 21px;
   letter-spacing: 0.035em;
-  /* Black */
   color: #463538;
   opacity: 0.8;
 }
@@ -117,8 +138,6 @@
 .about-images-col img {
   position: relative;
   overflow: hidden;
-  /* For the following settings we set 100%, but it can be higher if needed 
-  See the answer update */
 }
 @media (max-width: 1152px) {
   .about-images-col img {
@@ -298,6 +317,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .block-text {
   font-family: "Source Sans Pro";
   font-weight: 700;
@@ -437,6 +457,7 @@
     margin-top: 0px;
   }
 }
+
 .faq-content {
   display: flex;
   align-items: flex-end;
@@ -452,11 +473,9 @@
   font-weight: 900;
   font-size: 30px;
   line-height: 38px;
-  /* identical to box height */
   display: flex;
   align-items: center;
   letter-spacing: 0.035em;
-  /* Black */
   color: #463538;
   margin-bottom: 55px;
 }
@@ -489,19 +508,16 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.035em;
-  /* Black */
   color: #463538;
 }
 
 .subtitle {
-  /* Text */
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 21px;
   letter-spacing: 0.035em;
-  /* Black */
   color: #463538;
   opacity: 0.8;
 }
@@ -525,8 +541,6 @@
 .faq-images-col img {
   position: relative;
   overflow: hidden;
-  /* For the following settings we set 100%, but it can be higher if needed 
-      See the answer update */
 }
 @media (max-width: 1152px) {
   .faq-images-col img {
@@ -688,6 +702,7 @@
 }
 .order-service-input::placeholder {
   color: #FFFFFF;
+  opacity: 1;
 }
 .order-service-input:not(:last-child) {
   margin-bottom: 35px;
@@ -726,6 +741,9 @@
   margin-bottom: 35px;
   white-space: wrap;
 }
+.contacts-item .contacts-item__title:hover {
+  text-decoration: underline;
+}
 .contacts-item__title {
   font-family: "Source Sans Pro";
   font-weight: 700;
@@ -737,8 +755,10 @@
 }
 .contacts-item__subtitle {
   font-family: "Source Sans Pro";
+  font-style: normal;
   font-weight: 300;
   font-size: 15px;
+  opacity: 0.7;
   line-height: 141.2%;
   letter-spacing: 0.035em;
   color: #FFFFFF;
@@ -810,7 +830,6 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 23px;
-  /* identical to box height */
   letter-spacing: 0.01em;
   color: #FFFFFF;
   color: #FFFFFF;
