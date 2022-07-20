@@ -258,14 +258,16 @@
 }
 .block-info__header {
   display: flex;
+  padding-bottom: 14px;
 }
 .block-info__line {
   border-bottom: 1px solid;
   width: 100%;
   border-image: linear-gradient(to right, rgba(255, 255, 255, 0.4431372549), rgba(255, 255, 255, 0)) 47% 0%;
-  padding-bottom: 14px;
   margin-bottom: 14px;
   height: 1px;
+  overflow: hidden;
+  position: relative;
 }
 .block-info__tariff-text {
   font-family: "Roboto";
