@@ -112,14 +112,14 @@
     overflow: hidden;
     letter-spacing: 0.035em;
     border-bottom: 1px solid #fff;
-    opacity: 0.7;
-    color: #FFFFFF;
+    color: #fff; 
     -webkit-appearance: none;
 
     &::placeholder {
-        color: #FFFFFF;
+        color: #ffffffa4;
         opacity: 1;
     }
+
 
     &:not(:last-child) {
         margin-bottom: 35px;

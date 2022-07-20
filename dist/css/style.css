@@ -696,12 +696,11 @@
   overflow: hidden;
   letter-spacing: 0.035em;
   border-bottom: 1px solid #fff;
-  opacity: 0.7;
-  color: #FFFFFF;
+  color: #fff;
   -webkit-appearance: none;
 }
 .order-service-input::placeholder {
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.6431372549);
   opacity: 1;
 }
 .order-service-input:not(:last-child) {
