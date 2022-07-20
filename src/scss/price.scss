@@ -92,11 +92,15 @@
 
     &__header {
         display: flex;
+
+    }
+    &__line{
         border-bottom: 1px solid;
         width: 100%;
         border-image: linear-gradient(to right, #ffffff71, rgba(255, 255, 255, 0)) 47% 0%;
         padding-bottom: 14px;
         margin-bottom: 14px;
+        height: 1px;
     }
 
     // .block-info__tariff-text
