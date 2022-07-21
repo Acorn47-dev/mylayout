@@ -69,19 +69,33 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             current.classList.add("active");
             if (index == 0) {
-                gotoblock_hero.scrollIntoView({behavior: "smooth"})
+                gotoblock_hero.scrollIntoView({
+                    duration: 2000
+                })
             } else if (index == 1) {
-                gotoblock_about.scrollIntoView({behavior: "smooth"})
+                gotoblock_about.scrollIntoView({
+                    duration: 2000
+                })
             } else if (index == 2) {
-                gotoblock_advantages.scrollIntoView({behavior: "smooth"})
+                gotoblock_advantages.scrollIntoView({
+                    duration: 2000
+                })
             } else if (index == 3) {
-                gotoblock_price.scrollIntoView({behavior: "smooth"})
+                gotoblock_price.scrollIntoView({
+                    duration: 2000
+                })
             } else if (index == 4) {
-                gotoblock_reviews.scrollIntoView({behavior: "smooth"})
+                gotoblock_reviews.scrollIntoView({
+                    duration: 2000
+                })
             } else if (index == 5) {
-               gotoblock_faq.scrollIntoView({behavior: "smooth"})
+                gotoblock_faq.scrollIntoView({
+                    duration: 2000
+                })
             } else if (index == 6) {
-               gotoblock_feedback.scrollIntoView({behavior: "smooth"})
+                gotoblock_feedback.scrollIntoView({
+                    duration: 2000
+                })
             }
         })
     })
@@ -96,25 +110,41 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             current.classList.add("--active");
             if (index == 0) {
-                gotoblock_hero.scrollIntoView({behavior: "smooth"})
+                gotoblock_hero.scrollIntoView({
+                    duration: 2000
+                })
             } else if (index == 1) {
-                gotoblock_about.scrollIntoView({behavior: "smooth"})
+                gotoblock_about.scrollIntoView({
+                    duration: 2000
+                })
             } else if (index == 2) {
-                gotoblock_advantages.scrollIntoView({behavior: "smooth"})
+                gotoblock_advantages.scrollIntoView({
+                    duration: 2000
+                })
             } else if (index == 3) {
-                gotoblock_price.scrollIntoView({behavior: "smooth"})
+                gotoblock_price.scrollIntoView({
+                    duration: 2000
+                })
             } else if (index == 4) {
-                gotoblock_reviews.scrollIntoView({behavior: "smooth"})
+                gotoblock_reviews.scrollIntoView({
+                    duration: 2000
+                })
             } else if (index == 5) {
-               gotoblock_faq.scrollIntoView({behavior: "smooth"})
+                gotoblock_faq.scrollIntoView({
+                    duration: 2000
+                })
             } else if (index == 6) {
-               gotoblock_feedback.scrollIntoView({behavior: "smooth"})
+                gotoblock_feedback.scrollIntoView({
+                    duration: 2000
+                })
             }
         })
     })
     hero_btn.addEventListener("click", function () {
 
-        gotoblock_about.scrollIntoView({behavior: "smooth"})
+        gotoblock_about.scrollIntoView({
+            behavior: "smooth"
+        })
     });
     if (!hero_title_col.classList.contains("burger-active")) {
         document.querySelector(".hero-title-col").style.left = document.querySelector(".first-item").offsetLeft + "px";
@@ -130,7 +160,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function scroll(value) {
         close_burger();
         var t = value;
-        value.scrollIntoView({behavior: "smooth"})
+        value.scrollIntoView({
+            behavior: "smooth"
+        })
     }
 
     function checkwidth() {
