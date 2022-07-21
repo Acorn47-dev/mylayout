@@ -54,23 +54,20 @@
 }
 
 .footer-link {
-    color: inherit;
-}
 
-.footer-item {
     font-family: 'Source Sans Pro';
-    font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 0.01em;
     color: #FFFFFF;
-
     &.active {
         font-weight: 700;
     }
+}
 
-    color: #FFFFFF;
+.footer-item {
+
     display: flex;
     align-items: flex-end;
 

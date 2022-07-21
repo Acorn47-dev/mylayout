@@ -874,23 +874,20 @@
 }
 
 .footer-link {
-  color: inherit;
-}
-
-.footer-item {
   font-family: "Source Sans Pro";
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 0.01em;
   color: #FFFFFF;
-  color: #FFFFFF;
+}
+.footer-link.active {
+  font-weight: 700;
+}
+
+.footer-item {
   display: flex;
   align-items: flex-end;
-}
-.footer-item.active {
-  font-weight: 700;
 }
 @media (min-width: 769px) {
   .footer-item:not(:last-child) {
