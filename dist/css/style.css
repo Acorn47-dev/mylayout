@@ -685,7 +685,6 @@
   background-position: center;
   height: 550px;
   width: 50%;
-  background-repeat: no-repeat;
   position: relative;
 }
 @media (max-width: 950px) {
@@ -708,7 +707,6 @@
   background-image: url(../img/feedback-2.jpg);
   background-position: center;
   height: 550px;
-  background-repeat: no-repeat;
   z-index: 2;
   width: 50%;
 }

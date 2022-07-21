@@ -103,7 +103,8 @@
     }
     height: 550px;
     width: 50%;
-    background-repeat: no-repeat;
+
+
     position: relative;
 
     @media(max-width: 690px) {
@@ -118,7 +119,7 @@
     background-image: url(../img/feedback-2.jpg);
     background-position: center;
     height: 550px;
-    background-repeat: no-repeat;
+
     z-index: 2;
     @media(max-width: 950px) {
         display: none;
