@@ -7,10 +7,7 @@
 .feedback-content {
     display: flex;
 
-    @media(max-width: 950px) {
-        background-image: url(../img/feedback-1.jpg);
-        background-position: center;
-    }
+
 
     @media(max-width: 690px) {
         flex-direction: column;
@@ -27,8 +24,20 @@
     position: relative;
     z-index: -10;
 }
+.content-order{
+    @media(max-width: 690px) {
+        margin: 0 auto;
+    }
+}
+.content-contacts{
+    @media(min-width: 1340px) {
+        transform: translateX(100px);
+    }
+}
 
 .content {
+    position: relative;
+        z-index: 3;
     width: $maxWidthContainer/3.5;
 
     @media(max-width: 900px) {
@@ -49,7 +58,7 @@
 
     height: 550px;
     display: flex;
-    margin: 0 auto;
+
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -57,17 +66,49 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+.background{
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    @media(max-width: 690px) {
+       flex-direction: column;
+       height:100%;
+    }
+}
 
+.background-3{
+    background-image: url(../img/feedback-1.jpg);
+    background-position: center;
+
+    @media(min-width: 950px) {
+        display: none;
+    }
+    @media(max-width: 690px) {
+        display: none;
+    }
+
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
 .background-1 {
     background-image: url(../img/feedback-1.jpg);
     background-position: center;
 
     @media(max-width: 950px) {
+        display: none;
         background-image: none;
         transform: translateY(1px);
     }
+    height: 550px;
+    width: 50%;
+    background-repeat: no-repeat;
+    position: relative;
 
     @media(max-width: 690px) {
+        display: block;
+        width: 100%;
         background-image: url(../img/feedback-1.jpg);
         transform: translateY(1px);
     }
@@ -76,12 +117,17 @@
 .background-2 {
     background-image: url(../img/feedback-2.jpg);
     background-position: center;
-
+    height: 550px;
+    background-repeat: no-repeat;
+    z-index: 2;
     @media(max-width: 950px) {
+        display: none;
         background-image: none;
     }
-
+    width: 50%;
     @media(max-width: 690px) {
+        display: block;
+        width: 100%;
         background-image: url(../img/feedback-2.jpg);
     }
 }

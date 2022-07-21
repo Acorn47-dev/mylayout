@@ -587,12 +587,6 @@
 .feedback-content {
   display: flex;
 }
-@media (max-width: 950px) {
-  .feedback-content {
-    background-image: url(../img/feedback-1.jpg);
-    background-position: center;
-  }
-}
 @media (max-width: 690px) {
   .feedback-content {
     flex-direction: column;
@@ -610,11 +604,24 @@
   z-index: -10;
 }
 
+@media (max-width: 690px) {
+  .content-order {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1340px) {
+  .content-contacts {
+    transform: translateX(100px);
+  }
+}
+
 .content {
+  position: relative;
+  z-index: 3;
   width: 385.7142857143px;
   height: 550px;
   display: flex;
-  margin: 0 auto;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -643,18 +650,55 @@
   }
 }
 
+.background {
+  height: 550px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+@media (max-width: 690px) {
+  .background {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.background-3 {
+  background-image: url(../img/feedback-1.jpg);
+  background-position: center;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 950px) {
+  .background-3 {
+    display: none;
+  }
+}
+@media (max-width: 690px) {
+  .background-3 {
+    display: none;
+  }
+}
+
 .background-1 {
   background-image: url(../img/feedback-1.jpg);
   background-position: center;
+  height: 550px;
+  width: 50%;
+  background-repeat: no-repeat;
+  position: relative;
 }
 @media (max-width: 950px) {
   .background-1 {
+    display: none;
     background-image: none;
     transform: translateY(1px);
   }
 }
 @media (max-width: 690px) {
   .background-1 {
+    display: block;
+    width: 100%;
     background-image: url(../img/feedback-1.jpg);
     transform: translateY(1px);
   }
@@ -663,14 +707,21 @@
 .background-2 {
   background-image: url(../img/feedback-2.jpg);
   background-position: center;
+  height: 550px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  width: 50%;
 }
 @media (max-width: 950px) {
   .background-2 {
+    display: none;
     background-image: none;
   }
 }
 @media (max-width: 690px) {
   .background-2 {
+    display: block;
+    width: 100%;
     background-image: url(../img/feedback-2.jpg);
   }
 }
