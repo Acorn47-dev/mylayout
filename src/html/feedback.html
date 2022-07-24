@@ -9,13 +9,16 @@
 
         <div class="feedback-content ">
             <div class="feedback-col ">
-                <div class="order-service content content-order" >
+                <form class="order-service content content-order" method="post" name="order-form" id="order-form">
                     <div class="order-service-title feedback-title">Заказать услуги</div>
-                    <input class="order-service-input input-name" placeholder="Имя">
-                    <input class="order-service-input input-tel" placeholder="Телефон">
-                    <input class="order-service-input input-email" placeholder="E-mail (необязательно)">
-                    <button class="order-service-btn input-btn">Заказать звонок</button>
-                </div>
+                    <input  class="order-service-input input-name" placeholder="Имя">
+                    <div class="order-service-error error-name">Имя введено неправильно!</div>
+                    <input type="tel" class="order-service-input input-tel" placeholder="Телефон">
+                    <div class="order-service-error error-tel">Номер телефона введен неправильно!</div>
+                    <input type="email" class="order-service-input input-email" placeholder="E-mail (необязательно)">
+                    <div class="order-service-error error-email">Адрес электронной почты введен неправильно!</div>
+                    <input  class="order-service-btn input-btn" value="Заказать звонок">
+                </form>
             </div>
             <div class="feedback-col ">
                 <div class="contacts content content-contacts"  style="    margin: 0 auto;">

@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     header_back.addEventListener("click", (e) => {
         close_burger();
     })
-
     function close_burger() {
         burger_menu.classList.remove("--active");
         burger.style.display = "block";
@@ -58,6 +57,67 @@ document.addEventListener("DOMContentLoaded", function () {
     const gotoblockvalue_price = gotoblock_price.getBoundingClientRect().top + scrollY - document.querySelector('.price').offsetHeight;
     const gotoblock_reviews = document.querySelector(".reviews");
     const gotoblockvalue_reviews = gotoblock_reviews.getBoundingClientRect().top + scrollY - document.querySelector('.reviews').offsetHeight;
+    const ginput_btn = document.querySelector(".input-btn");
+    const error_tel = document.querySelector(".error-tel"),
+    error_email = document.querySelector(".error-email"),
+        error_name = document.querySelector(".error-name");
+        var error = 0;
+    ginput_btn.addEventListener("click", function () {
+        error_tel.style.display = "none";
+        error_email.style.display = "none";
+        error_name.style.display = "none";
+        error = 0;
+        ValidMail();
+        ValidPhone();
+        ValidName();
+        alert(error)
+    })
+    var myMail = document.querySelector('.input-email');
+    var myName = document.querySelector('.input-name');
+    var myPhone = document.querySelector('.input-tel');
+    var maskOptions = {
+        mask: '+375 00-000-0000',
+        lazy: false
+    } 
+    var maskOptionsremove = {
+        mask: null,
+        lazy: false
+    } 
+    myPhone.addEventListener("click", function (params) {
+        IMask(myPhone, maskOptions);
+    })
+
+    function ValidMail() {
+        var re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+        
+        var valid = re.test(myMail.value);
+        var output;
+        if (valid) output = 'Адрес эл. почты введен правильно!';
+        else {
+            error_email.style.display = "block";
+            error = 1;
+        } 
+    }
+    function ValidName() {
+        var output;
+        if (myName.value!="") output = 'Адрес эл. почты введен правильно!';
+        else {
+            error_name.style.display = "block";
+            error = 1;
+        } 
+    }
+    function ValidPhone() {
+        var re = /^[\d\+][\d\(\)\ -]{4,14}\d$/;
+        
+        var valid = re.test(myPhone.value);
+        var output;
+        if (valid) output = 'Номер телефона введен правильно!';
+        else {
+            error_phone.style.display = "block";
+            error = 1;
+        } 
+    }  
+
     footer_link.forEach((el, index) => {
         el.addEventListener("click", (e) => {
             burger_menu.classList.remove("--active");
@@ -141,7 +201,6 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     })
     hero_btn.addEventListener("click", function () {
-
         gotoblock_about.scrollIntoView({
             behavior: "smooth"
         })
@@ -156,7 +215,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         };
     }
-
     function scroll(value) {
         close_burger();
         var t = value;
@@ -164,7 +222,6 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: "smooth"
         })
     }
-
     function checkwidth() {
         var width = window.innerWidth;
         if (width > 700) {
@@ -185,4 +242,18 @@ document.addEventListener("DOMContentLoaded", function () {
             hero_col_image.style.display = "block";
         }
     }
+    $("#order-form").submit(function (e) {
+        alert("tte");
+        e.preventDefault(); 
+        $.ajax({
+            type: "POST",
+            url: sendmail.php,
+            data: $(this).serialize(),
+            success: function()
+            {
+                alert("data");
+            }
+        });
+        
+    });
 })

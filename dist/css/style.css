@@ -724,6 +724,14 @@
   }
 }
 
+.order-service-error {
+  color: red;
+  font-size: 15px;
+  display: none;
+  font-family: "Source Sans Pro";
+  transform: translateY(-30px);
+}
+
 .feedback-title {
   margin-bottom: 55px;
   font-family: "Source Sans Pro";
@@ -775,6 +783,7 @@
   cursor: pointer;
   letter-spacing: 0.01em;
   color: #FFFFFF;
+  text-align: center;
   transition: all 0.3s ease 0s;
 }
 .order-service-btn:hover {
