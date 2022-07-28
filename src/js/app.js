@@ -243,17 +243,89 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
     $("#order-form").submit(function (e) {
-        alert("tte");
         e.preventDefault(); 
         $.ajax({
             type: "POST",
-            url: sendmail.php,
+            url: "/sendmail.php",
             data: $(this).serialize(),
-            success: function()
+            success: function(data)
             {
-                alert("data");
+                alert(data);
             }
         });
         
     });
+
+
+    gsap.set('.nav-list', { y: -70, opacity: 0 })
+    gsap.set('.hero-title-col ', { x: 100, opacity: 0 })
+    gsap.set('.hero-col-image', { x: -100, opacity: 0 })
+    gsap.set('.burger', { x: '-100vw' })
+    gsap.to('.burger', { x: '0', delay: 2.0,})
+    gsap.to(".nav-list", { delay: 2.0, y: 0, opacity: 1})
+    gsap.to('.hero-col-image', { x: 0, delay: 3, opacity: 1 })
+    gsap.to('.hero-title-col ', {x: 0, opacity: 1, delay: 2.0})
+    gsap.to(".layer-1", { delay: .5, y: '-100vh' })
+    gsap.to(".layer-2", { delay: .7, y: '-100vh' })
+    gsap.to(".layer-3", { delay: .9, y: '-100vh' })
+    gsap.to(".overlay", { delay: 1.5, y: '-100vh' })
+
 })
+var controller = new ScrollMagic.Controller();
+new ScrollMagic.Scene({ triggerElement: "#trigger1" })
+    .setClassToggle(".animation0", "start-left-end")
+    .addIndicators({ name: "1 - add a class" })
+    .addTo(controller)
+
+new ScrollMagic.Scene({ triggerElement: "#trigger1" })
+    .setClassToggle(".animation1", "start-right-end")
+    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
+    .addTo(controller)
+
+new ScrollMagic.Scene({ triggerElement: "#trigger2" })
+    .setClassToggle(".animation2", "start-left-end")
+    .addIndicators({ name: "1 - add a class" })
+    .addTo(controller)
+
+new ScrollMagic.Scene({ triggerElement: "#trigger2" })
+    .setClassToggle(".animation3", "start-right-end")
+    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
+    .addTo(controller)
+new ScrollMagic.Scene({ triggerElement: "#trigger2" })
+    .setClassToggle(".animation4", "start-right-end")
+    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
+    .addTo(controller)
+new ScrollMagic.Scene({ triggerElement: "#trigger3" })
+    .setClassToggle(".animation5", "start-left-end")
+    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
+    .addTo(controller)
+new ScrollMagic.Scene({ triggerElement: "#trigger3" })
+    .setClassToggle(".animation6", "start-right-end")
+    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
+    .addTo(controller)
+new ScrollMagic.Scene({ triggerElement: "#trigger4" })
+    .setClassToggle(".animation7", "start-left-end")
+    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
+    .addTo(controller)
+new ScrollMagic.Scene({ triggerElement: "#trigger4" })
+    .setClassToggle(".animation8", "start-right-end")
+    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
+    .addTo(controller)
+new ScrollMagic.Scene({ triggerElement: "#trigger5" })
+    .setClassToggle(".animation9", "start-left-end")
+    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
+    .addTo(controller)
+new ScrollMagic.Scene({ triggerElement: "#trigger5" })
+    .setClassToggle(".animation10", "start-right-end")
+    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
+    .addTo(controller)
+new ScrollMagic.Scene({ triggerElement: "#trigger6" })
+    .setClassToggle(".animation11", "start-alpha-end")
+    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
+    .addTo(controller)
+new ScrollMagic.Scene({ triggerElement: "#trigger6" })
+    .setClassToggle(".animation12", "start-alpha-end")
+    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
+    .addTo(controller)
+
+

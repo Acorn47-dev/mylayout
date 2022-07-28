@@ -2,6 +2,7 @@ $maxWidthContainer: 1350px;
 $md1: 1152px;
 $md2: 768px;
 $md3: 320px;
+@import "preload";
 @import "fonts";
 @import "about";
 @import "advantages";
@@ -30,6 +31,7 @@ $md3: 320px;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -38,6 +40,35 @@ body {
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+}
+.start-left-start{
+    opacity: 0;
+    transform: translate(-100%);
+    transition: all 1s;
+}
+.start-left-end{
+    opacity: 1;
+    transform: translate(0%);
+    transition: all 1s;
+}
+.start-right-start{
+    opacity: 0;
+    transform: translate(100%);
+    transition: all 1s;
+}
+.start-right-end{
+    opacity: 1;
+    transform: translate(0%);
+    transition: all 1s;
+}
+
+.start-alpha-start{
+    opacity: 0;
+    transition: all 1s;
+}
+.start-alpha-end{
+    opacity: 1;
+    transition: all 1s;
 }
 
 .hero-background {
