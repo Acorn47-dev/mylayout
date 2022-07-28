@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 
     <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220721151951">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Главная</title>
 
 </head>
 
     <body>
+        <script src="https://unpkg.com/imask"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
         <div class="wrapper">
+            <div class="overlay">
+    <div class="layer layer-1"></div>
+    <div class="layer layer-2"></div>
+    <div class="layer layer-3"></div>
+    
+</div>
             <header class="header">
     <div class="header__container container">
         <nav class="header-nav nav">
@@ -68,13 +79,13 @@
         </div>
     </div>
 </header>
-
+ 
             <div class="hero-background">
-    <picture><source srcset="img/hero-background.webp" type="image/webp"><img src="img/hero-background.jpg" alt=""></picture>
+    <img src="img/hero-background.jpg" alt="">
 </div>
 <section class="hero --active" style="position: relative;">
     <div class="hero-col hero-col-image">
-        <picture><source srcset="img/hero-image.webp" type="image/webp"><img src="img/hero-image.png" class="hero-image"></picture>
+        <img src="img/hero-image.png" class="hero-image">
     </div>
     <div class="hero-col hero-title-col">
         <div class="container" >
@@ -89,14 +100,14 @@
     </div>
 </section>
 
-            <section class="about">
+            <section class="about " id="trigger1">
     <div class="container">
       
         <div class="about-content">
             
             <div class="about-col texts-col" style="margin-top: 120px;">
-                <div class="company__title main-title title-company">Наша компания</div>
-                <div class="about-texts about-texts">
+                <div class="company__title main-title title-company animation0 start-left-start" >Наша компания</div>
+                <div class="about-texts about-texts  animation0 start-left-start">
                     <div class="about-texts__block">
                         <div class="about__title mini-title">Немного о нас</div>
                         <div class="about__title subtitle">MOTODRIVE — одна из первых компаний по прокату
@@ -126,15 +137,15 @@
                 </div>
     
             </div>
-            <div class="about-col">
+            <div class="about-col animation1 start-right-start">
                 <div class="about-images about-images">
                     <div class="about-images-col" style="margin: 14px 0px 0px 0px;">
-                        <picture><source srcset="img/about-1.webp" type="image/webp"><img src="img/about-1.jpg" class="about-image" alt="about-1.jpg"></picture>
-                        <picture><source srcset="img/about-3.webp" type="image/webp"><img src="img/about-3.jpg" class="about-image" alt="about-3.jpg"></picture>
+                        <img src="img/about-1.jpg" class="about-image" alt="about-1.jpg">
+                        <img src="img/about-3.jpg" class="about-image" alt="about-3.jpg">
                     </div>
                     <div class="about-images-col" style="margin: -14px 0px 0px 0px;">
-                        <picture><source srcset="img/about-2.webp" type="image/webp"><img src="img/about-2.jpg" class="about-image" alt="about-2.jpg"></picture>
-                        <picture><source srcset="img/about-4.webp" type="image/webp"><img src="img/about-4.jpg" class="about-image" alt="about-4.jpg"></picture>
+                        <img src="img/about-2.jpg" class="about-image" alt="about-2.jpg">
+                        <img src="img/about-4.jpg" class="about-image" alt="about-4.jpg">
                     </div>
                 </div>
             </div>
@@ -144,31 +155,31 @@
     </div>
 </section>
 
-            <section class="advantages">
+            <section class="advantages" id="trigger2">
     <div class="container">
         <div class="advantages-content">
-            <div class="advantages-title main-title">Преимущества</div>
+            <div class="advantages-title main-title animation2 start-left-start">Преимущества</div>
             <ul class="advantages-list">
-                <li class="advantages-item">
-                    <img src="img/advantages-1.svg" alt="" class="advantages-icon">
+                <li class="advantages-item animation3 start-left-start">
+                    <img src="img/advantages-1.svg" alt="" class="advantages-icon ">
                     <div class="advantages-mini-title mini-title">Большой опыт</div>
                     <div class="advantages-mini-subtitle subtitle">Мы имеем огромный опыт за спиной по проведению
                         поездок, обучению и инструктажу новичков</div>
                 </li>
-                <li class="advantages-item">
-                    <img src="img/advantages-2.svg" alt="" class="advantages-icon">
+                <li class="advantages-item animation3 start-left-start">
+                    <img src="img/advantages-2.svg" alt="" class="advantages-icon ">
                     <div class="advantages-mini-title mini-title">Качественное оборудование</div>
                     <div class="advantages-mini-subtitle subtitle">Мы предоставляем только качественное оборудование.
                         Возможность поломки во время катания минимальна</div>
                 </li>
-                <li class="advantages-item">
+                <li class="advantages-item animation4 start-right-start">
                     <img src="img/advantages-3.svg" alt="" class="advantages-icon">
                     <div class="advantages-mini-title mini-title">Интересные маршруты</div>
                     <div class="advantages-mini-subtitle subtitle">Маршруты проходят через живописные места. Так вы
                         будете получать удовольствие от каждого момента поездки</div>
                 </li>
-                <li class="advantages-item">
-                    <img src="img/advantages-4.svg" alt="" class="advantages-icon">
+                <li class="advantages-item animation4 start-right-start">
+                    <img src="img/advantages-4.svg" alt="" class="advantages-icon ">
                     <div class="advantages-mini-title mini-title">Права не нужны!</div>
                     <div class="advantages-mini-subtitle subtitle">Наши мотоциклы являются спортивным инвертарем и не
                         требует наличия водительских прав!</div>
@@ -178,12 +189,12 @@
     </div>
 </section>
 
-            <section class="price">
+            <section class="price" id="trigger3">
     <div class="container">
         <div class="price-content">
-            <div class="price-title main-title">Цены</div>
+            <div class="price-title main-title animation5 start-left-start">Цены</div>
             <div class="price-blocks">
-                <article class="price-block" style="background-image: url(img/block-1.jpg)">
+                <article class="price-block animation5 start-left-start" style="background-image: url(img/block-1.jpg)">
                     <div class="price-block__price">35p.</div>
                     <div class="price-block__info block-info">
                         <div class="block-info__header">
@@ -203,7 +214,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="price-block" style="background-image: url(img/block-2.jpg)">
+                <article class="price-block animation6 start-right-start" style="background-image: url(img/block-2.jpg)">
                     <div class="price-block__price">45p.</div>
                     <div class="price-block__info block-info">
                         <div class="block-info__header">
@@ -223,7 +234,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="price-block" style="background-image: url(img/block-3.jpg)">
+                <article class="price-block animation5 start-left-start" style="background-image: url(img/block-3.jpg)">
                     <div class="price-block__price">30p.</div>
                     <div class="price-block__info block-info">
                         <div class="block-info__header">
@@ -243,7 +254,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="price-block" style="background-image: url(img/block-4.jpg)">
+                <article class="price-block animation6 start-right-start" style="background-image: url(img/block-4.jpg)">
                     <div class="price-block__price">40р.</div>
                     <div class="price-block__info block-info">
                         <div class="block-info__header">
@@ -267,14 +278,14 @@
         </div>
     </div>
 </section>
-            <div class="reviews">
+            <div class="reviews" id="trigger4">
     <div class="container">
         <div class="reviews-content">
-            <div class="reviews-title main-title">Отзывы</div>
+            <div class="reviews-title main-title animation7 start-left-start">Отзывы</div>
             <div class="reviews-list">
-                <article class="reviews-item">
+                <article class="reviews-item animation7 start-left-start">
                     <div class="reviews-header">
-                        <picture><source srcset="img/avatar-1.webp" type="image/webp"><img src="img/avatar-1.png" class="user-avatar"></picture>
+                        <img src="img/avatar-1.png" class="user-avatar">
                         <div class="user">
                             
                             <div class="user-info">
@@ -289,19 +300,61 @@
                                 <img src="img/star-icon.svg" class="rating-star">
                             </div>
                         </div>
-=======
->>>>>>> 2f18356e3fc2dba314df9ba26a11c5ce864901b6
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.min.css">
-        <title>Главная</title>
+                    </div>
+                    <div class="reviews-body">
+                        <div class="reviews-text">
+                            С мототехникой знаком давно. В основном ездил на спортах. Решил попробовать эндуро. Очень
+                            понравилось. Особенно то самое чувство, когда летишь по бездорожью, а ямки и кочки вообще не
+                            чувствуются! Ни капли не жалею, что покатался. Рекомендую ребят!
+                        </div>
+                    </div>
+                </article>
+                <article class="reviews-item animation8 start-right-start">
+                    <div class="reviews-header">
+                        <img src="img/avatar-2.png" class="user-avatar">
+                        <div class="user">
+                            
+                            <div class="user-info">
+                                <div class="user-login">Артем Ткачук</div>
+                                <div class="user-location">Жабинка, Беларусь</div>
+                            </div>
+                            <div class="user-rating">
+                                <img src="img/star-icon.svg" class="rating-star">
+                                <img src="img/star-icon.svg" class="rating-star">
+                                <img src="img/star-icon.svg" class="rating-star">
+                                <img src="img/star-icon.svg" class="rating-star">
+                                <img src="img/star-empty-icon.svg" class="rating-star">
+                            </div>
+                        </div>
 
-    </head>
+                    </div>
+                    <div class="reviews-body">
+                        <div class="reviews-text">
+                            Ребяят! Это просто что-то с чем-то! Таких эмоций давно не испытывал. Не смотря на редкие
+                            падения, я очень рад что покатался) Я был с компанией друзей. Благодаря этому мы не только
+                            наслаждалдались покатушками, но и долго смеялись с нелепых падений. С кем не бывает)
+                        </div>
+                    </div>
+                </article>
+                <article class="reviews-item animation7 start-left-start">
+                    <div class="reviews-header">
+                        <img src="img/avatar-3.png" class="user-avatar">
+                        <div class="user">
+                            
+                            <div class="user-info">
+                                <div class="user-login">Валерия Маманюк</div>
+                                <div class="user-location">Кобрин, Беларусь</div>
+                            </div>
+                            <div class="user-rating">
+                                <img src="img/star-icon.svg" class="rating-star">
+                                <img src="img/star-icon.svg" class="rating-star">
+                                <img src="img/star-icon.svg" class="rating-star">
+                                <img src="img/star-icon.svg" class="rating-star">
+                                <img src="img/star-icon.svg" class="rating-star">
+                            </div>
+                        </div>
 
-<<<<<<< HEAD
                     </div>
                     <div class="reviews-body">
                         <div class="reviews-text">
@@ -311,9 +364,9 @@
                         </div>
                     </div>
                 </article>
-                <article class="reviews-item">
+                <article class="reviews-item animation8 start-right-start">
                     <div class="reviews-header">
-                        <picture><source srcset="img/avatar-4.webp" type="image/webp"><img src="img/avatar-4.png" class="user-avatar"></picture>
+                        <img src="img/avatar-4.png" class="user-avatar">
                         <div class="user">
                             
                             <div class="user-info">
@@ -344,14 +397,14 @@
     </div>
 </div>
 
-            <section class="faq">
+            <section class="faq" id="trigger5">
     <div class="container">
 
         <div class="faq-content">
 
             <div class="faq-col">
-                <div class="company__title main-title title-company">Частые вопросы</div>
-                <div class="faq-texts faq-texts">
+                <div class="company__title main-title title-company animation9 start-left-start">Частые вопросы</div>
+                <div class="faq-texts faq-texts animation9 start-left-start">
                     <div class="faq-col">
                         <div class="faq-texts__block">
                             <div class="faq__title mini-title">Что такое питбайк?</div>
@@ -397,16 +450,16 @@
                 </div>
 
             </div>
-            <div class="faq-col " style="margin-left: 30px;">
+            <div class="faq-col animation10 start-right-start" style="margin-left: 30px;">
                 <div class="faq-images faq-images">
                     <div class="faq-images-col" style="margin: 14px 0px 0px 0px;">
-                        <picture><source srcset="img/faq-1.webp" type="image/webp"><img src="img/faq-1.jpg" class="faq-image faq-image__big" alt="faq-1.jpg"></picture>
+                        <img src="img/faq-1.jpg" class="faq-image faq-image__big" alt="faq-1.jpg">
                        
-                        <picture><source srcset="img/faq-3.webp" type="image/webp"><img src="img/faq-3.jpg" class="faq-image faq-image__small" alt="faq-3.jpg" ></picture>
+                        <img src="img/faq-3.jpg" class="faq-image faq-image__small" alt="faq-3.jpg" >
                     </div>
                     <div class="faq-images-col" style="margin: -14px 0px 0px 0px;">
-                        <picture><source srcset="img/faq-2.webp" type="image/webp"><img src="img/faq-2.jpg" class="faq-image faq-image__small" alt="faq-2.jpg "  ></picture>
-                        <picture><source srcset="img/faq-4.webp" type="image/webp"><img src="img/faq-4.jpg" class="faq-image faq-image__big" alt="faq-4.jpg" ></picture>
+                        <img src="img/faq-2.jpg" class="faq-image faq-image__small" alt="faq-2.jpg "  >
+                        <img src="img/faq-4.jpg" class="faq-image faq-image__big" alt="faq-4.jpg" >
                     </div>
                 </div>
             </div>
@@ -416,7 +469,7 @@
     </div>
 </section>
 
-            <section class="feedback" >
+            <section class="feedback animation11 start-alpha-start" id="trigger6">
 
     <div class="background">
         <div class="background-1"></div>
@@ -426,16 +479,19 @@
     <div class="container">
 
         <div class="feedback-content ">
-            <div class="feedback-col ">
-                <div class="order-service content content-order" >
+            <div class="feedback-col">
+                <form class="order-service content content-order" method="post" name="order-form" id="order-form">
                     <div class="order-service-title feedback-title">Заказать услуги</div>
-                    <input class="order-service-input input-name" placeholder="Имя">
-                    <input class="order-service-input input-tel" placeholder="Телефон">
-                    <input class="order-service-input input-email" placeholder="E-mail (необязательно)">
-                    <button class="order-service-btn input-btn">Заказать звонок</button>
-                </div>
+                    <input  class="order-service-input input-name" name="input-name" placeholder="Имя">
+                    <div class="order-service-error error-name">Имя введено неправильно!</div>
+                    <input type="tel" class="order-service-input input-tel" name="input-tel" placeholder="Телефон">
+                    <div class="order-service-error error-tel">Номер телефона введен неправильно!</div>
+                    <input type="email" class="order-service-input input-email" name="input-email" placeholder="E-mail (необязательно)">
+                    <div class="order-service-error error-email">Адрес электронной почты введен неправильно!</div>
+                    <input  class="order-service-btn input-btn" type="submit"  value="Заказать звонок">
+                </form>
             </div>
-            <div class="feedback-col ">
+            <div class="feedback-col">
                 <div class="contacts content content-contacts"  style="    margin: 0 auto;">
                     <ul class="contacts-list">
                         <div class="contacts-title feedback-title">Контакты</div>
@@ -449,411 +505,59 @@
                                 </svg>
                             </div>
                             <div class="contacts-info">
-=======
-    <body>
-        <script src="https://unpkg.com/imask"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <div class="wrapper">
-            <header class="header">
-                <div class="header__container container">
-                    <nav class="header-nav nav">
-                        <ul class="nav-list list">
-                            <li class="list__item item first-item">
-                                <img src="img/email-icon.svg" alt="#" class="item-icon">
->>>>>>> 2f18356e3fc2dba314df9ba26a11c5ce864901b6
                                 <a href="mailto:david.kolesnikovich@mail.ru"
-                                    class="item-link link">david.kolesnikovich@mail.ru</a>
-                            </li>
-                            <li class="list__item item">
-                                <img src="img/insta-icon.svg" alt="#" class="item-icon">
+                                    class="contacts-item__title">david.kolesnikovich@mail.ru</a>
+                                <div class="contacts-item__subtitle">Присылайте ваши вопросы, пожелания</div>
+                            </div>
+                        </li>
+                        <li class="contacts-item" >
+                            <div class="contacts-item__icon">
+                                <svg width="17" height="17" viewBox="0 0 13 14" fill="white"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_17_37)">
+                                        <path
+                                            d="M9.481 0.217682H3.51898C1.57858 0.217682 0 1.79626 0 3.73666V9.69878C0 11.6391 1.57858 13.2177 3.51898 13.2177H9.4811C11.4214 13.2177 13 11.6391 13 9.69878V3.73666C13 1.79626 11.4214 0.217682 9.481 0.217682V0.217682ZM12.2379 9.69878C12.2379 11.2188 11.0012 12.4555 9.481 12.4555H3.51898C1.99881 12.4555 0.762114 11.2188 0.762114 9.69878V3.73666C0.762114 2.2165 1.99881 0.979796 3.51898 0.979796H9.4811C11.0012 0.979796 12.2379 2.2165 12.2379 3.73666V9.69878Z"
+                                            fill="white" />
+                                        <path
+                                            d="M6.50002 3.16309C4.53998 3.16309 2.94543 4.75763 2.94543 6.71767C2.94543 8.6777 4.53998 10.2722 6.50002 10.2722C8.46005 10.2722 10.0546 8.6777 10.0546 6.71767C10.0546 4.75763 8.46005 3.16309 6.50002 3.16309ZM6.50002 9.51013C4.96032 9.51013 3.70755 8.25747 3.70755 6.71767C3.70755 5.17797 4.96032 3.9252 6.50002 3.9252C8.03982 3.9252 9.29248 5.17797 9.29248 6.71767C9.29248 8.25747 8.03982 9.51013 6.50002 9.51013Z"
+                                            fill="white" />
+                                        <path
+                                            d="M10.1396 1.9007C9.56035 1.9007 9.08923 2.37191 9.08923 2.95103C9.08923 3.53025 9.56035 4.00147 10.1396 4.00147C10.7188 4.00147 11.19 3.53025 11.19 2.95103C11.19 2.37181 10.7188 1.9007 10.1396 1.9007ZM10.1396 3.23925C9.98068 3.23925 9.85135 3.10992 9.85135 2.95103C9.85135 2.79204 9.98068 2.66281 10.1396 2.66281C10.2986 2.66281 10.4279 2.79204 10.4279 2.95103C10.4279 3.10992 10.2986 3.23925 10.1396 3.23925Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_17_37">
+                                            <rect width="13" height="13" fill="white" transform="translate(0 0.217682)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="contacts-info">
                                 <a href="https://www.instagram.com/_cross_drive_/"
-                                    class="item-link link">_cross_drive_</a>
-                            </li>
-                            <li class="list__item item">
-                                <img src="img/tel-icon.svg" alt="#" class="item-icon">
-                                <a href="tel:+375298834236" class="item-link link">+375 29 8834236</a>
-                            </li>
-
-                        </ul>
-
-                    </nav>
-                </div>
-                <div class="container">
-                    <div class="header-adaptive">
-
-                        <div class="burger-title header-title logo">motodrive</div>
-                        <div class="burger-icon">
-                            <span class="burger__line"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="burger">
-                    <div class="burger-content">
-                        <div class="burger-header">
-                            <div class="burger-title header-title logo-burger">motodrive</div>
-                            <button class="header-back arrow-btn">
-                                <img src="img/arrow-icon.svg" alt="">
-                            </button>
-                        </div>
-
-                        <nav class="burger-nav">
-                            <ul class="burger-list blist">
-                                <li class="blist-item burger-text --active"><a class="burger-link">Главная</a></li>
-                                <li class="blist-item burger-text"><a class="burger-link">Наша компания</a></li>
-                                <li class="blist-item burger-text"><a class="burger-link">Преимущества</a></li>
-                                <li class="blist-item burger-text"><a class="burger-link">Цены</a></li>
-                                <li class="blist-item burger-text"><a class="burger-link">Отзывы</a></li>
-                                <li class="blist-item burger-text"><a class="burger-link">Частые вопросы</a></li>
-                                <li class="blist-item burger-text"><a class="burger-link">Заказать услуги</a></li>
-                                <li class="blist-item burger-text"><a class="burger-link">Контакты</a></li>
-                            </ul>
-                        </nav>
-                        <button class="burger-feedback-btn feedback-btn">Заказать звонок</button>
-                    </div>
-                </div>
-            </header>
-
-            <div class="hero-background">
-                <img src="img/hero-background.jpg" alt="">
-            </div>
-            <section class="hero --active" style="position: relative;">
-                <div class="hero-col hero-col-image">
-                    <img src="img/hero-image.png" class="hero-image">
-                </div>
-                <div class="hero-col hero-title-col">
-                    <div class="container">
-                        <h1 class="hero-title ">Прокат кроссовых<br>
-                            Мотоциклов</h1>
-                        <div class="hero-descr">Запоминающиеся выходные в Бресте –<br>
-                            прогулка на мотоциклах по лесу!</div>
-                        <button class="hero-btn">
-                            Читать больше
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about">
-                <div class="container">
-
-                    <div class="about-content">
-
-                        <div class="about-col texts-col" style="margin-top: 120px;">
-                            <div class="company__title main-title title-company">Наша компания</div>
-                            <div class="about-texts about-texts">
-                                <div class="about-texts__block">
-                                    <div class="about__title mini-title">Немного о нас</div>
-                                    <div class="about__title subtitle">MOTODRIVE — одна из первых компаний по прокату
-                                        мототехники в Бресте! Мы предоставляем услуги проката кроссовых мотциклов. У нас
-                                        большой опыт по
-                                        проведению катаний на мотоцикле как для новичков, так и опытных! Если вы новичек
-                                        — не
-                                        переживайте! Мы поможем Вам разобраться с техникой и научим ездить!</div>
-                                </div>
-                                <div class="about-texts__block">
-                                    <div class="about__title mini-title">С нами безопасно!</div>
-                                    <div class="about__title subtitle">Мы отвечаем за вашу безопасность при катании.
-                                        Поэтому
-                                        делаем все, чтоб избежать опастных ситуаций и травм. Экипировка выдаётся
-                                        бесплатно! Все
-                                        мотоциклы своевременно обслуживаются. Особое внимание уделяется обудению
-                                        новичков.</div>
-                                </div>
-                                <div class="about-texts__block special-block">
-                                    <div class="about__title mini-title">Когда мы работаем?</div>
-                                    <div class="about__title subtitle">Когда мы работаем?
-                                        Мы работаем круглосуточно без выходных в любую пору года! Звоните в любое
-                                        удобное для вас время!
-                                    </div>
-                                </div>
-                                <div class="about-texts__block">
-                                    <div class="about__title mini-title">Как взять мотоцикл в аренду?</div>
-                                    <div class="about__title subtitle">Оставить заявку на сайте Motodrive.by или
-                                        позвонить по
-                                        указанным телефонам, мы подберем для Вас удобное время и день, стоимость указана
-                                        на сайте ниже.
-                                    </div>
-                                </div>
-
+                                    class="contacts-item__title">_cross_drive_</a>
+                                <div class="contacts-item__subtitle">Зайди к нам на страницу!</div>
                             </div>
-
-                        </div>
-                        <div class="about-col">
-                            <div class="about-images about-images">
-                                <div class="about-images-col" style="margin: 14px 0px 0px 0px;">
-                                    <img src="img/about-1.jpg" class="about-image" alt="about-1.jpg">
-                                    <img src="img/about-3.jpg" class="about-image" alt="about-3.jpg">
-                                </div>
-                                <div class="about-images-col" style="margin: -14px 0px 0px 0px;">
-                                    <img src="img/about-2.jpg" class="about-image" alt="about-2.jpg">
-                                    <img src="img/about-4.jpg" class="about-image" alt="about-4.jpg">
-                                </div>
+                        </li>
+                        <li class="contacts-item">
+                            <div class="contacts-item__icon">
+                                <svg width="17" height="17" viewBox="0 0 13 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.63439 8.85921C3.92147 10.3919 5.47084 11.5987 7.23922 12.4527C7.91251 12.7705 8.81292 13.1476 9.81609 13.2123C9.87828 13.215 9.93777 13.2177 9.99996 13.2177C10.6732 13.2177 11.214 12.986 11.6548 12.5092C11.6575 12.5065 11.6629 12.5011 11.6656 12.4958C11.8224 12.3072 12.0009 12.1375 12.1875 11.957C12.3145 11.8358 12.4443 11.7092 12.5687 11.5799C13.1447 10.9819 13.1447 10.2222 12.5633 9.64309L10.9382 8.02415C10.6624 7.73861 10.3325 7.58776 9.98644 7.58776C9.64034 7.58776 9.30775 7.73861 9.02383 8.02145L8.05582 8.98581C7.96659 8.93463 7.87465 8.88884 7.78813 8.84574C7.67997 8.79186 7.57992 8.74068 7.49069 8.68411C6.6092 8.12651 5.80883 7.3992 5.04361 6.46447C4.65695 5.9769 4.39737 5.56745 4.2162 5.14992C4.47038 4.92096 4.70832 4.68121 4.93816 4.44686C5.01928 4.36335 5.1031 4.27984 5.18692 4.19634C5.47895 3.90541 5.63578 3.5687 5.63578 3.22659C5.63578 2.88449 5.48165 2.54777 5.18692 2.25684L4.38115 1.45411C4.28651 1.35983 4.19728 1.26824 4.10534 1.17396C3.92688 0.990786 3.74031 0.802224 3.55644 0.632518C3.27793 0.36045 2.95075 0.217682 2.60465 0.217682C2.26125 0.217682 1.93136 0.36045 1.64204 0.635212L0.630762 1.64267C0.263024 2.00902 0.0548197 2.45349 0.0115565 2.96799C-0.0398187 3.6118 0.0791553 4.29601 0.387406 5.12299C0.860598 6.40251 1.57444 7.59045 2.63439 8.85921ZM0.671321 3.02456C0.703769 2.66629 0.84167 2.36729 1.10125 2.10869L2.10712 1.10662C2.26395 0.955767 2.437 0.877649 2.60465 0.877649C2.76959 0.877649 2.93723 0.955767 3.09136 1.112C3.27252 1.27902 3.44287 1.45411 3.62674 1.63998C3.71868 1.73426 3.81332 1.82854 3.90795 1.92551L4.71373 2.72825C4.88138 2.89526 4.9679 3.06497 4.9679 3.23198C4.9679 3.39899 4.88138 3.5687 4.71373 3.73571C4.62991 3.81922 4.54609 3.90541 4.46226 3.98892C4.2108 4.24213 3.97555 4.48188 3.71597 4.71084C3.71057 4.71623 3.70786 4.71892 3.70245 4.72431C3.47803 4.94789 3.51318 5.1607 3.56726 5.32232C3.56996 5.3304 3.57266 5.33579 3.57537 5.34387C3.78357 5.84222 4.07289 6.31631 4.52446 6.882C5.33564 7.87868 6.19009 8.65179 7.13107 9.24711C7.24734 9.32253 7.37172 9.38179 7.48799 9.44105C7.59615 9.49493 7.69619 9.54611 7.78542 9.60268C7.79624 9.60807 7.80435 9.61345 7.81517 9.61884C7.9044 9.66464 7.99092 9.68619 8.07745 9.68619C8.29377 9.68619 8.43437 9.54881 8.48034 9.50301L9.49162 8.49555C9.64845 8.33931 9.8188 8.25581 9.98644 8.25581C10.1919 8.25581 10.3596 8.38241 10.465 8.49555L12.0955 10.1172C12.42 10.4404 12.4173 10.7906 12.0874 11.1327C11.9738 11.2539 11.8549 11.3698 11.7278 11.491C11.5385 11.6742 11.3411 11.8627 11.1627 12.0755C10.8517 12.4096 10.4813 12.5658 10.0027 12.5658C9.9567 12.5658 9.90803 12.5631 9.86206 12.5604C8.97516 12.5038 8.15046 12.159 7.53125 11.8654C5.84939 11.0546 4.37303 9.90438 3.14814 8.44437C2.13957 7.23488 1.46088 6.1089 1.01202 4.9021C0.733512 4.16132 0.628058 3.566 0.671321 3.02456Z"
+                                        fill="white" />
+                                </svg>
                             </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-            <section class="advantages">
-                <div class="container">
-                    <div class="advantages-content">
-                        <div class="advantages-title main-title">Преимущества</div>
-                        <ul class="advantages-list">
-                            <li class="advantages-item">
-                                <img src="img/advantages-1.svg" alt="" class="advantages-icon">
-                                <div class="advantages-mini-title mini-title">Большой опыт</div>
-                                <div class="advantages-mini-subtitle subtitle">Мы имеем огромный опыт за спиной по
-                                    проведению
-                                    поездок, обучению и инструктажу новичков</div>
-                            </li>
-                            <li class="advantages-item">
-                                <img src="img/advantages-2.svg" alt="" class="advantages-icon">
-                                <div class="advantages-mini-title mini-title">Качественное оборудование</div>
-                                <div class="advantages-mini-subtitle subtitle">Мы предоставляем только качественное
-                                    оборудование.
-                                    Возможность поломки во время катания минимальна</div>
-                            </li>
-                            <li class="advantages-item">
-                                <img src="img/advantages-3.svg" alt="" class="advantages-icon">
-                                <div class="advantages-mini-title mini-title">Интересные маршруты</div>
-                                <div class="advantages-mini-subtitle subtitle">Маршруты проходят через живописные места.
-                                    Так вы
-                                    будете получать удовольствие от каждого момента поездки</div>
-                            </li>
-                            <li class="advantages-item">
-                                <img src="img/advantages-4.svg" alt="" class="advantages-icon">
-                                <div class="advantages-mini-title mini-title">Права не нужны!</div>
-                                <div class="advantages-mini-subtitle subtitle">Наши мотоциклы являются спортивным
-                                    инвертарем и не
-                                    требует наличия водительских прав!</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="price">
-                <div class="container">
-                    <div class="price-content">
-                        <div class="price-title main-title">Цены</div>
-                        <div class="price-blocks">
-                            <article class="price-block" style="background-image: url(img/block-1.jpg)">
-                                <div class="price-block__price">35p.</div>
-                                <div class="price-block__info block-info">
-                                    <div class="block-info__header">
-                                        <div class="block-info__tariff-text tariff-text">Тариф: </div>
-                                        <div class="block-info__tariff-value tariff-value">Выходной</div>
-                                    </div>
-                                    <div class="block-info__line"></div>
-                                    <div class="block-info__body">
-                                        <div class="info__body-col">
-                                            <div class="block-info__date-text block-text">День недели:</div>
-                                            <div class="block-info__time-text block-text">Время:</div>
-                                        </div>
-                                        <div class="info__body-col">
-                                            <div class="block-info__date-value block-value">Выходной</div>
-                                            <div class="block-info__time-value block-value">1ч.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="price-block" style="background-image: url(img/block-2.jpg)">
-                                <div class="price-block__price">45p.</div>
-                                <div class="price-block__info block-info">
-                                    <div class="block-info__header">
-                                        <div class="block-info__tariff-text tariff-text">Тариф: </div>
-                                        <div class="block-info__tariff-value tariff-value">Выходной Plus</div>
-                                    </div>
-                                    <div class="block-info__line"></div>
-                                    <div class="block-info__body">
-                                        <div class="info__body-col">
-                                            <div class="block-info__date-text block-text">День недели:</div>
-                                            <div class="block-info__time-text block-text">Время:</div>
-                                        </div>
-                                        <div class="info__body-col">
-                                            <div class="block-info__date-value block-value">Выходной</div>
-                                            <div class="block-info__time-value block-value">2ч.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="price-block" style="background-image: url(img/block-3.jpg)">
-                                <div class="price-block__price">30p.</div>
-                                <div class="price-block__info block-info">
-                                    <div class="block-info__header">
-                                        <div class="block-info__tariff-text tariff-text">Тариф: </div>
-                                        <div class="block-info__tariff-value tariff-value">Будний</div>
-                                    </div>
-                                    <div class="block-info__line"></div>
-                                    <div class="block-info__body">
-                                        <div class="info__body-col">
-                                            <div class="block-info__date-text block-text">День недели:</div>
-                                            <div class="block-info__time-text block-text">Время:</div>
-                                        </div>
-                                        <div class="info__body-col">
-                                            <div class="block-info__date-value block-value">Будний</div>
-                                            <div class="block-info__time-value block-value">1ч.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="price-block" style="background-image: url(img/block-4.jpg)">
-                                <div class="price-block__price">40р.</div>
-                                <div class="price-block__info block-info">
-                                    <div class="block-info__header">
-                                        <div class="block-info__tariff-text tariff-text">Тариф: </div>
-                                        <div class="block-info__tariff-value tariff-value">Выходной</div>
-                                    </div>
-                                    <div class="block-info__line"></div>
-                                    <div class="block-info__body">
-                                        <div class="info__body-col">
-                                            <div class="block-info__date-text block-text">День недели:</div>
-                                            <div class="block-info__time-text block-text">Время:</div>
-                                        </div>
-                                        <div class="info__body-col">
-                                            <div class="block-info__date-value block-value">Выходной</div>
-                                            <div class="block-info__time-value block-value">2ч.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="reviews">
-                <div class="container">
-                    <div class="reviews-content">
-                        <div class="reviews-title main-title">Отзывы</div>
-                        <div class="reviews-list">
-                            <article class="reviews-item">
-                                <div class="reviews-header">
-                                    <img src="img/avatar-1.png" class="user-avatar">
-                                    <div class="user">
-
-                                        <div class="user-info">
-                                            <div class="user-login">Михаил Артемов</div>
-                                            <div class="user-location">Брест, Беларусь</div>
-                                        </div>
-                                        <div class="user-rating">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="reviews-body">
-                                    <div class="reviews-text">
-                                        С мототехникой знаком давно. В основном ездил на спортах. Решил попробовать
-                                        эндуро. Очень
-                                        понравилось. Особенно то самое чувство, когда летишь по бездорожью, а ямки и
-                                        кочки вообще не
-                                        чувствуются! Ни капли не жалею, что покатался. Рекомендую ребят!
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="reviews-item">
-                                <div class="reviews-header">
-                                    <img src="img/avatar-2.png" class="user-avatar">
-                                    <div class="user">
-
-                                        <div class="user-info">
-                                            <div class="user-login">Артем Ткачук</div>
-                                            <div class="user-location">Жабинка, Беларусь</div>
-                                        </div>
-                                        <div class="user-rating">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-empty-icon.svg" class="rating-star">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="reviews-body">
-                                    <div class="reviews-text">
-                                        Ребяят! Это просто что-то с чем-то! Таких эмоций давно не испытывал. Не смотря
-                                        на редкие
-                                        падения, я очень рад что покатался) Я был с компанией друзей. Благодаря этому мы
-                                        не только
-                                        наслаждалдались покатушками, но и долго смеялись с нелепых падений. С кем не
-                                        бывает)
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="reviews-item">
-                                <div class="reviews-header">
-                                    <img src="img/avatar-3.png" class="user-avatar">
-                                    <div class="user">
-
-                                        <div class="user-info">
-                                            <div class="user-login">Валерия Маманюк</div>
-                                            <div class="user-location">Кобрин, Беларусь</div>
-                                        </div>
-                                        <div class="user-rating">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="reviews-body">
-                                    <div class="reviews-text">
-                                        Давно мечтала найти что-то подобное. Никак не хватало времени поискать. Недавно
-                                        отправили в
-                                        отпуск - я и решила развлечь себя по полной. Посоветовал знакомый этих ребят.
-                                        Они на месте
-                                        все показали и рассказали. Эмоции при катании просто не передать! Безумно рада!
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="reviews-item">
-                                <div class="reviews-header">
-                                    <img src="img/avatar-4.png" class="user-avatar">
-                                    <div class="user">
-
-                                        <div class="user-info">
-                                            <div class="user-login">Анна Рогачук</div>
-                                            <div class="user-location">Брест, Беларусь</div>
-                                        </div>
-                                        <div class="user-rating">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                            <img src="img/star-icon.svg" class="rating-star">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="reviews-body">
-                                    <div class="reviews-text">
-                                        Привет. Меня зовут Анна. Я заказала услуги проката у этих ребят. Все
-                                        понравилось. Показали
-                                        что к чему. Разобралась довольно быстро. Села и поехала!! Немного была в шоке,
-                                        когда
-                                        буквально «залетела» в горку! Не думала даже, что такая техника так едет!
-                                        Вобщем, ребята
-                                        меня приятно удивили!)
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
+                            <div class="contacts-info">
+                                <a href="tel:+375298834236" class="contacts-item__title">+375 29 8834236</a>
+                                <div class="contacts-item__subtitle">Позвони и узнай то, что тебя интересует!</div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
+    </div>
 
-<<<<<<< HEAD
 </section>
 
             <footer class="footer">
@@ -864,14 +568,14 @@
                 <div class="footer-copy">©2021 sitename.by | Все права защищены</div>
             </div>
             <ul class="footer-col footer-links">
-                <li class="footer-item"><a  class="footer-link active"></a>Главная</li>
-                <li class="footer-item"><a  class="footer-link">Наша компания</a></li>
-                <li class="footer-item"><a  class="footer-link">Преимущества</a></li>
-                <li class="footer-item"><a  class="footer-link">Цены</a></li>
-                <li class="footer-item"><a  class="footer-link">Отзывы</a></li>
-                <li class="footer-item"><a  class="footer-link">Частые вопросы</a></li>
-                <li class="footer-item"><a  class="footer-link">Заказать услуги</a></li>
-                <li class="footer-item"><a  class="footer-link">Контакты</a></li>
+                <li class="footer-item"><a class="footer-link active">Главная</a></li>
+                <li class="footer-item"><a class="footer-link">Наша компания</a></li>
+                <li class="footer-item"><a class="footer-link">Преимущества</a></li>
+                <li class="footer-item"><a class="footer-link">Цены</a></li>
+                <li class="footer-item"><a class="footer-link">Отзывы</a></li>
+                <li class="footer-item"><a class="footer-link">Частые вопросы</a></li>
+                <li class="footer-item"><a class="footer-link">Заказать услуги</a></li>
+                <li class="footer-item"><a class="footer-link">Контакты</a></li>
             </ul>
             <div class="footer-col footer-other">
                 <button class="footer-btn arrow-btn">
@@ -883,224 +587,12 @@
     </div>
 </footer>
 
-            
-        </div>
-        <script src="js/app.min.js?_v=20220721151951"></script>
-        <script src="https://unpkg.com/imask"></script>
-=======
-            <section class="faq">
-                <div class="container">
-
-                    <div class="faq-content">
-
-                        <div class="faq-col">
-                            <div class="company__title main-title title-company">Частые вопросы</div>
-                            <div class="faq-texts faq-texts">
-                                <div class="faq-col">
-                                    <div class="faq-texts__block">
-                                        <div class="faq__title mini-title">Что такое питбайк?</div>
-                                        <div class="faq__title subtitle">Питбайк — это разновидность мотоцикла,
-                                            ориентированного на
-                                            начинающих мотоциклистов-любителей, а так же мини-мотокросса или
-                                            мини-супермото .
-                                            Представляет собой уменьшенную копию кроссового мотоцикла, при этом имеет
-                                            такие же органы
-                                            управления и достаточную мощность, для того что бы почувствовать «взрослые»
-                                            ощущения от
-                                            вождения!</div>
-                                    </div>
-                                    <div class="faq-texts__block">
-                                        <div class="faq__title mini-title">Что нужно иметь при себе?</div>
-                                        <div class="faq__title subtitle">Желательно
-                                            При себе надо иметь:<br>
-                                            - Паспорт<br>
-                                            - Если вы не достигли 18 летнего возраста, паспорт должны иметь родители или
-                                            опекун.<br>
-                                            - Одежду и обувь удобную для катание на мотоцикле<br>
-                                            - Хорошее настроение и позитивный настрой<br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="faq-col">
-                                    <div class="faq-texts__block">
-                                        <div class="faq__title mini-title">В чем плюсы пит байка?</div>
-                                        <div class="faq__title subtitle">Питбайки позволяют без лишнего риска и высоких
-                                            нагрузок
-                                            обучиться езде на мотоцикле, разобраться в его работе, научиться переключать
-                                            передачи,
-                                            чувствовать сцепление и правильно тормозить, ощутить поведение на различных
-                                            покрытиях</div>
-                                    </div>
-
-                                    <div class="faq-texts__block">
-                                        <div class="faq__title mini-title">Можно ли кататься зимой?</div>
-                                        <div class="faq__title subtitle">Конечно можно! В отличие от дорожных
-                                            мотоциклов, гонять на
-                                            питбайке вы можете круглый год без каких-либо последствий для себя и
-                                            техники. Это весело и
-                                            гораздо безопаснее!
-                                        </div>
-                                    </div>
-                                    <div class="faq-texts__block">
-                                        <div class="faq__title mini-title">Нужны ли права на питбайк?</div>
-                                        <div class="faq__title subtitle">Для управления питбайком НЕ требуется
-                                            водительское
-                                            удостоверение, так как он является спортивным инвентарем.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="faq-col " style="margin-left: 30px;">
-                            <div class="faq-images faq-images">
-                                <div class="faq-images-col" style="margin: 14px 0px 0px 0px;">
-                                    <img src="img/faq-1.jpg" class="faq-image faq-image__big" alt="faq-1.jpg">
-
-                                    <img src="img/faq-3.jpg" class="faq-image faq-image__small" alt="faq-3.jpg">
-                                </div>
-                                <div class="faq-images-col" style="margin: -14px 0px 0px 0px;">
-                                    <img src="img/faq-2.jpg" class="faq-image faq-image__small" alt="faq-2.jpg ">
-                                    <img src="img/faq-4.jpg" class="faq-image faq-image__big" alt="faq-4.jpg">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-            <section class="feedback">
-
-                <div class="background">
-                    <div class="background-1"></div>
-                    <div class="background-2"></div>
-                    <div class="background-3"></div>
-                </div>
-                <div class="container">
-
-                    <div class="feedback-content ">
-                        <div class="feedback-col ">
-                            <form class="order-service content content-order" method="post" name="order-form"
-                                id="order-form">
-                                <div class="order-service-title feedback-title">Заказать услуги</div>
-                                <input class="order-service-input input-name" name="input-name" placeholder="Имя">
-                                <div class="order-service-error error-name">Имя введено неправильно!</div>
-                                <input type="tel" class="order-service-input input-tel" name="input-tel"
-                                    placeholder="Телефон">
-                                <div class="order-service-error error-tel">Номер телефона введен неправильно!</div>
-                                <input type="email" class="order-service-input input-email" name="input-email"
-                                    placeholder="E-mail (необязательно)">
-                                <div class="order-service-error error-email">Адрес электронной почты введен неправильно!
-                                </div>
-                                <input type="submit" class="order-service-btn input-btn" name="input-btn"
-                                    value="Заказать звонок">
-                            </form>
-                        </div>
-                        <div class="feedback-col ">
-                            <div class="contacts content content-contacts" style="    margin: 0 auto;">
-                                <ul class="contacts-list">
-                                    <div class="contacts-title feedback-title">Контакты</div>
-                                    <li class="contacts-item">
-                                        <div class="contacts-item__icon">
-                                            <svg width="17" height="17" viewBox="0 0 16 17" fill="white"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M14.6667 2.71768H1.33334C0.597969 2.71768 0 3.31565 0 4.05103V13.3844C0 14.1197 0.597969 14.7177 1.33334 14.7177H14.6667C15.402 14.7177 16 14.1197 16 13.3843V4.05103C16 3.31565 15.402 2.71768 14.6667 2.71768ZM1.33334 3.38434H14.6667C14.7158 3.38434 14.7591 3.40224 14.8052 3.41237C13.6508 4.46884 9.82322 7.97046 8.48375 9.17731C8.37894 9.27171 8.21 9.38434 8.00003 9.38434C7.79006 9.38434 7.62113 9.27171 7.51597 9.17699C6.17663 7.97034 2.34878 4.46853 1.19463 3.41243C1.24081 3.40231 1.28419 3.38434 1.33334 3.38434ZM0.666656 13.3843V4.05103C0.666656 3.98571 0.686344 3.92646 0.703969 3.86678C1.58747 4.6754 4.25822 7.11865 5.98997 8.69343C4.26384 10.1762 1.59241 12.7089 0.701875 13.5581C0.686156 13.5014 0.666656 13.446 0.666656 13.3843ZM14.6667 14.051H1.33334C1.28009 14.051 1.23275 14.0325 1.18303 14.0206C2.10325 13.1433 4.79169 10.596 6.48747 9.14531C6.70853 9.34584 6.91047 9.52868 7.06966 9.67212C7.34441 9.92018 7.666 10.051 8 10.051C8.334 10.051 8.65559 9.92015 8.93 9.67243C9.08925 9.52893 9.29134 9.34593 9.51253 9.14531C11.2084 10.5959 13.8965 13.143 14.817 14.0206C14.7673 14.0325 14.72 14.051 14.6667 14.051ZM15.3333 13.3843C15.3333 13.4459 15.3138 13.5014 15.2982 13.5581C14.4073 12.7085 11.7362 10.176 10.0101 8.69346C11.7419 7.11868 14.4122 4.67565 15.296 3.86671C15.3137 3.9264 15.3333 3.98568 15.3333 4.05099V13.3843Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </div>
-                                        <div class="contacts-info">
-                                            <a href="mailto:david.kolesnikovich@mail.ru"
-                                                class="contacts-item__title">david.kolesnikovich@mail.ru</a>
-                                            <div class="contacts-item__subtitle">Присылайте ваши вопросы, пожелания
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="contacts-item">
-                                        <div class="contacts-item__icon">
-                                            <svg width="17" height="17" viewBox="0 0 13 14" fill="white"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_17_37)">
-                                                    <path
-                                                        d="M9.481 0.217682H3.51898C1.57858 0.217682 0 1.79626 0 3.73666V9.69878C0 11.6391 1.57858 13.2177 3.51898 13.2177H9.4811C11.4214 13.2177 13 11.6391 13 9.69878V3.73666C13 1.79626 11.4214 0.217682 9.481 0.217682V0.217682ZM12.2379 9.69878C12.2379 11.2188 11.0012 12.4555 9.481 12.4555H3.51898C1.99881 12.4555 0.762114 11.2188 0.762114 9.69878V3.73666C0.762114 2.2165 1.99881 0.979796 3.51898 0.979796H9.4811C11.0012 0.979796 12.2379 2.2165 12.2379 3.73666V9.69878Z"
-                                                        fill="white" />
-                                                    <path
-                                                        d="M6.50002 3.16309C4.53998 3.16309 2.94543 4.75763 2.94543 6.71767C2.94543 8.6777 4.53998 10.2722 6.50002 10.2722C8.46005 10.2722 10.0546 8.6777 10.0546 6.71767C10.0546 4.75763 8.46005 3.16309 6.50002 3.16309ZM6.50002 9.51013C4.96032 9.51013 3.70755 8.25747 3.70755 6.71767C3.70755 5.17797 4.96032 3.9252 6.50002 3.9252C8.03982 3.9252 9.29248 5.17797 9.29248 6.71767C9.29248 8.25747 8.03982 9.51013 6.50002 9.51013Z"
-                                                        fill="white" />
-                                                    <path
-                                                        d="M10.1396 1.9007C9.56035 1.9007 9.08923 2.37191 9.08923 2.95103C9.08923 3.53025 9.56035 4.00147 10.1396 4.00147C10.7188 4.00147 11.19 3.53025 11.19 2.95103C11.19 2.37181 10.7188 1.9007 10.1396 1.9007ZM10.1396 3.23925C9.98068 3.23925 9.85135 3.10992 9.85135 2.95103C9.85135 2.79204 9.98068 2.66281 10.1396 2.66281C10.2986 2.66281 10.4279 2.79204 10.4279 2.95103C10.4279 3.10992 10.2986 3.23925 10.1396 3.23925Z"
-                                                        fill="white" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_17_37">
-                                                        <rect width="13" height="13" fill="white"
-                                                            transform="translate(0 0.217682)" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div class="contacts-info">
-                                            <a href="https://www.instagram.com/_cross_drive_/"
-                                                class="contacts-item__title">_cross_drive_</a>
-                                            <div class="contacts-item__subtitle">Зайди к нам на страницу!</div>
-                                        </div>
-                                    </li>
-                                    <li class="contacts-item">
-                                        <div class="contacts-item__icon">
-                                            <svg width="17" height="17" viewBox="0 0 13 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M2.63439 8.85921C3.92147 10.3919 5.47084 11.5987 7.23922 12.4527C7.91251 12.7705 8.81292 13.1476 9.81609 13.2123C9.87828 13.215 9.93777 13.2177 9.99996 13.2177C10.6732 13.2177 11.214 12.986 11.6548 12.5092C11.6575 12.5065 11.6629 12.5011 11.6656 12.4958C11.8224 12.3072 12.0009 12.1375 12.1875 11.957C12.3145 11.8358 12.4443 11.7092 12.5687 11.5799C13.1447 10.9819 13.1447 10.2222 12.5633 9.64309L10.9382 8.02415C10.6624 7.73861 10.3325 7.58776 9.98644 7.58776C9.64034 7.58776 9.30775 7.73861 9.02383 8.02145L8.05582 8.98581C7.96659 8.93463 7.87465 8.88884 7.78813 8.84574C7.67997 8.79186 7.57992 8.74068 7.49069 8.68411C6.6092 8.12651 5.80883 7.3992 5.04361 6.46447C4.65695 5.9769 4.39737 5.56745 4.2162 5.14992C4.47038 4.92096 4.70832 4.68121 4.93816 4.44686C5.01928 4.36335 5.1031 4.27984 5.18692 4.19634C5.47895 3.90541 5.63578 3.5687 5.63578 3.22659C5.63578 2.88449 5.48165 2.54777 5.18692 2.25684L4.38115 1.45411C4.28651 1.35983 4.19728 1.26824 4.10534 1.17396C3.92688 0.990786 3.74031 0.802224 3.55644 0.632518C3.27793 0.36045 2.95075 0.217682 2.60465 0.217682C2.26125 0.217682 1.93136 0.36045 1.64204 0.635212L0.630762 1.64267C0.263024 2.00902 0.0548197 2.45349 0.0115565 2.96799C-0.0398187 3.6118 0.0791553 4.29601 0.387406 5.12299C0.860598 6.40251 1.57444 7.59045 2.63439 8.85921ZM0.671321 3.02456C0.703769 2.66629 0.84167 2.36729 1.10125 2.10869L2.10712 1.10662C2.26395 0.955767 2.437 0.877649 2.60465 0.877649C2.76959 0.877649 2.93723 0.955767 3.09136 1.112C3.27252 1.27902 3.44287 1.45411 3.62674 1.63998C3.71868 1.73426 3.81332 1.82854 3.90795 1.92551L4.71373 2.72825C4.88138 2.89526 4.9679 3.06497 4.9679 3.23198C4.9679 3.39899 4.88138 3.5687 4.71373 3.73571C4.62991 3.81922 4.54609 3.90541 4.46226 3.98892C4.2108 4.24213 3.97555 4.48188 3.71597 4.71084C3.71057 4.71623 3.70786 4.71892 3.70245 4.72431C3.47803 4.94789 3.51318 5.1607 3.56726 5.32232C3.56996 5.3304 3.57266 5.33579 3.57537 5.34387C3.78357 5.84222 4.07289 6.31631 4.52446 6.882C5.33564 7.87868 6.19009 8.65179 7.13107 9.24711C7.24734 9.32253 7.37172 9.38179 7.48799 9.44105C7.59615 9.49493 7.69619 9.54611 7.78542 9.60268C7.79624 9.60807 7.80435 9.61345 7.81517 9.61884C7.9044 9.66464 7.99092 9.68619 8.07745 9.68619C8.29377 9.68619 8.43437 9.54881 8.48034 9.50301L9.49162 8.49555C9.64845 8.33931 9.8188 8.25581 9.98644 8.25581C10.1919 8.25581 10.3596 8.38241 10.465 8.49555L12.0955 10.1172C12.42 10.4404 12.4173 10.7906 12.0874 11.1327C11.9738 11.2539 11.8549 11.3698 11.7278 11.491C11.5385 11.6742 11.3411 11.8627 11.1627 12.0755C10.8517 12.4096 10.4813 12.5658 10.0027 12.5658C9.9567 12.5658 9.90803 12.5631 9.86206 12.5604C8.97516 12.5038 8.15046 12.159 7.53125 11.8654C5.84939 11.0546 4.37303 9.90438 3.14814 8.44437C2.13957 7.23488 1.46088 6.1089 1.01202 4.9021C0.733512 4.16132 0.628058 3.566 0.671321 3.02456Z"
-                                                    fill="white" />
-                                            </svg>
-                                        </div>
-                                        <div class="contacts-info">
-                                            <a href="tel:+375298834236" class="contacts-item__title">+375 29 8834236</a>
-                                            <div class="contacts-item__subtitle">Позвони и узнай то, что тебя
-                                                интересует!</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer-content">
-                        <div class="footer-col footer-main">
-                            <div class="footer-logo">motodrive</div>
-                            <div class="footer-copy">©2021 sitename.by | Все права защищены</div>
-                        </div>
-                        <ul class="footer-col footer-links">
-                            <li class="footer-item"><a class="footer-link active">Главная</a></li>
-                            <li class="footer-item"><a class="footer-link">Наша компания</a></li>
-                            <li class="footer-item"><a class="footer-link">Преимущества</a></li>
-                            <li class="footer-item"><a class="footer-link">Цены</a></li>
-                            <li class="footer-item"><a class="footer-link">Отзывы</a></li>
-                            <li class="footer-item"><a class="footer-link">Частые вопросы</a></li>
-                            <li class="footer-item"><a class="footer-link">Заказать услуги</a></li>
-                            <li class="footer-item"><a class="footer-link">Контакты</a></li>
-                        </ul>
-                        <div class="footer-col footer-other">
-                            <button class="footer-btn arrow-btn">
-
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-            </footer>
-
 
         </div>
         <script src="js/app.min.js"></script>
->>>>>>> 2f18356e3fc2dba314df9ba26a11c5ce864901b6
+        <script>
+            
+        </script>
     </body>
 
 </html>
