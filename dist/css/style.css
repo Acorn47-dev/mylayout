@@ -1228,6 +1228,9 @@ body {
 .burger-link {
   color: inherit;
 }
+.burger-link:hover {
+  text-decoration: underline;
+}
 
 .burger-icon {
   position: relative;

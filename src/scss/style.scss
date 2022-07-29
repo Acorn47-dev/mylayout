@@ -280,6 +280,9 @@ body {
 
 .burger-link {
     color: inherit;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 .burger-icon {
