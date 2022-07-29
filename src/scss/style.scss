@@ -11,7 +11,7 @@ $md3: 320px;
 @import "FAQ";
 @import "feedback";
 @import "footer";
-
+@import "mouse-follower";
 .wrapper {
     min-width: 100%;
     display: flex;
@@ -40,6 +40,7 @@ body {
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    overflow-y: hidden;
 }
 .start-left-animation{
     opacity: 0;
@@ -284,7 +285,11 @@ body {
         text-decoration: underline;
     }
 }
-
+.footer-link{
+    &:hover{
+        text-decoration: underline;
+    }
+}
 .burger-icon {
     position: relative;
     width: 25px;

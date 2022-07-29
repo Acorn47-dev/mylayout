@@ -12,9 +12,11 @@
 
     <body>
         <script src="js/imask.js"></script>
+        <script src="js/mouse-follower.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
         <div class="wrapper">
+            
             <div class="overlay">
     <div class="layer layer-1"></div>
     <div class="layer layer-2"></div>
@@ -22,6 +24,9 @@
     
 </div>
 <div class="loading">000</div>
+<div id="progstat"></div>
+<div id="progress"></div>
+
             <header class="header">
     <div class="header__container container">
         <nav class="header-nav nav">
@@ -63,14 +68,14 @@
 
             <nav class="burger-nav">
                 <ul class="burger-list blist">
-                    <li class="blist-item burger-text --active"><a  class="burger-link">Главная</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Наша компания</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Преимущества</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Цены</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Отзывы</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Частые вопросы</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Заказать услуги</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Контакты</a></li>
+                    <li class="blist-item burger-text --active"><a  href="#" class="burger-link">Главная</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link">Наша компания</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link">Преимущества</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link">Цены</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link">Отзывы</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link">Частые вопросы</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link">Заказать услуги</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link" >Контакты</a></li>
                 </ul>
             </nav>
             <button class="burger-feedback-btn feedback-btn">Заказать звонок</button>
@@ -566,14 +571,14 @@
                 <div class="footer-copy">©2021 sitename.by | Все права защищены</div>
             </div>
             <ul class="footer-col footer-links">
-                <li class="footer-item"><a class="footer-link active">Главная</a></li>
-                <li class="footer-item"><a class="footer-link">Наша компания</a></li>
-                <li class="footer-item"><a class="footer-link">Преимущества</a></li>
-                <li class="footer-item"><a class="footer-link">Цены</a></li>
-                <li class="footer-item"><a class="footer-link">Отзывы</a></li>
-                <li class="footer-item"><a class="footer-link">Частые вопросы</a></li>
-                <li class="footer-item"><a class="footer-link">Заказать услуги</a></li>
-                <li class="footer-item"><a class="footer-link">Контакты</a></li>
+                <li class="footer-item"><a href="#" class="footer-link ">Главная</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Наша компания</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Преимущества</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Цены</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Отзывы</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Частые вопросы</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Заказать услуги</a></li>
+                <li class="footer-item"><a href="#" class="footer-link active">Контакты</a></li>
             </ul>
             <div class="footer-col footer-other">
                 <button class="footer-btn arrow-btn">
@@ -588,9 +593,7 @@
 
         </div>
         <script src="js/app.min.js"></script>
-        <script>
-            
-        </script>
+
     </body>
 
 </html>
