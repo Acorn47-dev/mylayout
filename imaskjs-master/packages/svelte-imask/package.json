@@ -1,0 +1,29 @@
+{
+  "name": "@imask/svelte",
+  "author": "Alexey Kryazhev",
+  "license": "MIT",
+  "version": "6.4.2",
+  "description": "Svelte input mask",
+  "main": "dist/svelte-imask.js",
+  "repository": "https://github.com/uNmAnNeR/imaskjs/tree/master/packages/svelte-imask",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "svelte",
+    "imask",
+    "javascript",
+    "input",
+    "mask"
+  ],
+  "dependencies": {
+    "imask": "^6.4.2"
+  },
+  "peerDependencies": {
+    "svelte": ">=3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "228f2a4dce7125d0c7156868fcb5364b4487c8e6"
+}

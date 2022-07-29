@@ -242,18 +242,18 @@ document.addEventListener("DOMContentLoaded", function () {
             hero_col_image.style.display = "block";
         }
     }
-    $("#order-form").submit(function (e) {
-        alert("tte");
-        e.preventDefault(); 
-        $.ajax({
-            type: "POST",
-            url: sendmail.php,
-            data: $(this).serialize(),
-            success: function()
-            {
-                alert("data");
-            }
-        });
+    // $("#order-form").submit(function (e) {
+    //     alert("tte");
+    //     e.preventDefault(); 
+    //     $.ajax({
+    //         type: "POST",
+    //         url: sendmail.php,
+    //         data: $(this).serialize(),
+    //         success: function()
+    //         {
+    //             alert("data");
+    //         }
+    //     });
         
-    });
+    // });
 })

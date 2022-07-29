@@ -83,9 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
         mask: null,
         lazy: false
     } 
-    myPhone.addEventListener("click", function (params) {
-        IMask(myPhone, maskOptions);
-    })
+    IMask(myPhone, maskOptions);
 
     function ValidMail() {
         var re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
@@ -242,19 +240,19 @@ document.addEventListener("DOMContentLoaded", function () {
             hero_col_image.style.display = "block";
         }
     }
-    $("#order-form").submit(function (e) {
-        e.preventDefault(); 
-        $.ajax({
-            type: "POST",
-            url: "/sendmail.php",
-            data: $(this).serialize(),
-            success: function(data)
-            {
-                alert(data);
-            }
-        });
+    // $("#order-form").submit(function (e) {
+    //     e.preventDefault(); 
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "/sendmail.php",
+    //         data: $(this).serialize(),
+    //         success: function(data)
+    //         {
+    //             alert(data);
+    //         }
+    //     });
         
-    });
+    // });
 
 
     gsap.set('.nav-list', { y: -70, opacity: 0 })
@@ -271,61 +269,226 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.to(".overlay", { delay: 1.5, y: '-100vh' })
 
 })
-var controller = new ScrollMagic.Controller();
-new ScrollMagic.Scene({ triggerElement: "#trigger1" })
-    .setClassToggle(".animation0", "start-left-end")
-    .addIndicators({ name: "1 - add a class" })
-    .addTo(controller)
 
-new ScrollMagic.Scene({ triggerElement: "#trigger1" })
-    .setClassToggle(".animation1", "start-right-end")
-    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
-    .addTo(controller)
+gsap.registerPlugin(ScrollTrigger);
+gsap.to(".title-company", { 
+    scrollTrigger: {
+        trigger: ".title-company",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    x: 0,
+    opacity: 1
+})
+gsap.to(".animation-0", { 
+    scrollTrigger: {
+        trigger: ".animation-0",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    x: 0,
+    opacity: 1
+})
+gsap.to(".animation-1", { 
+    scrollTrigger: {
+        trigger: ".animation-1",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    x: 0,
+    opacity: 1
+})
+gsap.to(".advantages-title", { 
+    scrollTrigger: {
+        trigger: ".advantages-title",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    x: 0,
+    opacity: 1
+})
+gsap.to(".animation-2", { 
+    scrollTrigger: {
+        trigger: ".animation-2",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    y: 0,
+    opacity: 1
+})
+gsap.to(".animation-3", { 
+    scrollTrigger: {
+        trigger: ".animation-3",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    y: 0,
+    opacity: 1
+})
+gsap.to(".price-title", { 
+    scrollTrigger: {
+        trigger: ".price-title ",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    x: 0,
+    opacity: 1
+})
+gsap.to(".animation-4", { 
+    scrollTrigger: {
+        trigger: ".animation-4",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scale: 1,
+    opacity: 1
+})
+gsap.to(".animation-5", { 
+    scrollTrigger: {
+        trigger: ".animation-5",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scale: 1,
+    opacity: 1
+})
+gsap.to(".reviews-title", { 
+    scrollTrigger: {
+        trigger: ".reviews-title",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    x: 0,
+    opacity: 1
+})
+gsap.to(".animation-6", { 
+    scrollTrigger: {
+        trigger: ".animation-6",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scaleY: 1,
+    opacity: 1
+})
+gsap.to(".animation-7", { 
+    scrollTrigger: {
+        trigger: ".animation-7",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scaleY: 1,
+    opacity: 1
+})
+gsap.to(".animation-8", { 
+    scrollTrigger: {
+        trigger: ".animation-8",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scaleX: 1,
+    opacity: 1
+})
+gsap.to(".animation-9", { 
+    scrollTrigger: {
+        trigger: ".animation-9",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scaleX: 1,
+    opacity: 1
+})
+gsap.to(".animation-10", { 
+    scrollTrigger: {
+        trigger: ".animation-10",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scaleX: 1,
+    opacity: 1
+})
 
-new ScrollMagic.Scene({ triggerElement: "#trigger2" })
-    .setClassToggle(".animation2", "start-left-end")
-    .addIndicators({ name: "1 - add a class" })
-    .addTo(controller)
+gsap.to(".animation-11", { 
+    scrollTrigger: {
+        trigger: ".animation-11",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scaleX: 1,
+    opacity: 1
+})
+gsap.to(".animation-12", { 
+    scrollTrigger: {
+        trigger: ".animation-12",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scaleX: 1,
+    opacity: 1
+})
+gsap.to(".animation-13", { 
+    scrollTrigger: {
+        trigger: ".animation-13",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scaleX: 1,
+    opacity: 1
+})
+gsap.to(".animation-14", { 
+    scrollTrigger: {
+        trigger: ".animation-14",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scaleX: 1,
+    opacity: 1
+})
+gsap.to(".animation-15", { 
+    scrollTrigger: {
+        trigger: ".animation-15",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scaleX: 1,
+    opacity: 1
+})
+gsap.to(".animation-16", { 
+    scrollTrigger: {
+        trigger: ".animation-16",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scaleX: 1,
+    opacity: 1
+})
+gsap.to(".animation-17", { 
+    scrollTrigger: {
+        trigger: ".animation-17",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    scaleX: 1,
+    opacity: 1
+})
+gsap.to(".animation-18", { 
+    scrollTrigger: {
+        trigger: ".animation-18",
+        start: "top +=700",
+        toggleActions: "play none none none"
+    },
+    opacity: 1
+})
 
-new ScrollMagic.Scene({ triggerElement: "#trigger2" })
-    .setClassToggle(".animation3", "start-right-end")
-    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
-    .addTo(controller)
-new ScrollMagic.Scene({ triggerElement: "#trigger2" })
-    .setClassToggle(".animation4", "start-right-end")
-    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
-    .addTo(controller)
-new ScrollMagic.Scene({ triggerElement: "#trigger3" })
-    .setClassToggle(".animation5", "start-left-end")
-    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
-    .addTo(controller)
-new ScrollMagic.Scene({ triggerElement: "#trigger3" })
-    .setClassToggle(".animation6", "start-right-end")
-    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
-    .addTo(controller)
-new ScrollMagic.Scene({ triggerElement: "#trigger4" })
-    .setClassToggle(".animation7", "start-left-end")
-    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
-    .addTo(controller)
-new ScrollMagic.Scene({ triggerElement: "#trigger4" })
-    .setClassToggle(".animation8", "start-right-end")
-    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
-    .addTo(controller)
-new ScrollMagic.Scene({ triggerElement: "#trigger5" })
-    .setClassToggle(".animation9", "start-left-end")
-    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
-    .addTo(controller)
-new ScrollMagic.Scene({ triggerElement: "#trigger5" })
-    .setClassToggle(".animation10", "start-right-end")
-    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
-    .addTo(controller)
-new ScrollMagic.Scene({ triggerElement: "#trigger6" })
-    .setClassToggle(".animation11", "start-alpha-end")
-    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
-    .addTo(controller)
-new ScrollMagic.Scene({ triggerElement: "#trigger6" })
-    .setClassToggle(".animation12", "start-alpha-end")
-    .addIndicators({ name: "1 - add a class" }) // add indicators (requires plugin)
-    .addTo(controller)
+
+
+
+
+
+
+
+
+
+
+
 
 
