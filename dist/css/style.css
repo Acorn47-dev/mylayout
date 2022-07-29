@@ -16,6 +16,17 @@
   background: rgb(201, 201, 201);
 }
 
+.loading {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  font-family: "Source Sans Pro";
+  font-size: 60px;
+  font-weight: 700;
+  transform: translate(200%, -200%);
+}
+
 .about {
   margin-bottom: 110px;
 }
