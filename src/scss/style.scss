@@ -12,6 +12,10 @@ $md3: 320px;
 @import "feedback";
 @import "footer";
 @import "mouse-follower";
+
+@import "./components/cursor.scss";
+
+
 .wrapper {
     min-width: 100%;
     display: flex;

@@ -7,11 +7,18 @@
 
     <body>
         <script src="js/imask.js"></script>
-        <script src="js/mouse-follower.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+        <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+        <script  src="js/mouse-follower.js"></script>
+        
+
+        <script type="module" src="js/utils.js"></script>
+        <script type="module" src="js/cursor.js"></script>
+        <script type="module" src="js/index.js"></script>
+
+
         <div class="wrapper">
-            <!-- @@include('html/cursor.html',{}) -->
+            @@include('html/cursor.html',{})
             @@include('html/preloader.html',{})
             @@include('html/header.html',{}) 
             @@include('html/hero.html',{})
