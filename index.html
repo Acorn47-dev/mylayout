@@ -11,19 +11,40 @@
 </head>
 
     <body>
-        <script src="https://unpkg.com/imask"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+        <script src="js/imask.js"></script>
+        <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+        <script  src="js/mouse-follower.js"></script>
+        
+
+        <script type="module" src="js/utils.js"></script>
+        <script type="module" src="js/cursor.js"></script>
+        <script type="module" src="js/index.js"></script>
+
+
         <div class="wrapper">
+            <div class="cursor">
+    <div class="cursor-media">
+        <div class="video"
+        src=""
+        preload="auto"
+        autoplay
+        muted
+        loop
+        id="websites"
+        ></div>
+    </div>
+</div>
             <div class="overlay">
     <div class="layer layer-1"></div>
     <div class="layer layer-2"></div>
     <div class="layer layer-3"></div>
     
 </div>
+<div class="loading">000</div>
+<div id="progstat"></div>
+<div id="progress"></div>
+
             <header class="header">
     <div class="header__container container">
         <nav class="header-nav nav">
@@ -65,14 +86,14 @@
 
             <nav class="burger-nav">
                 <ul class="burger-list blist">
-                    <li class="blist-item burger-text --active"><a  class="burger-link">Главная</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Наша компания</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Преимущества</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Цены</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Отзывы</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Частые вопросы</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Заказать услуги</a></li>
-                    <li class="blist-item burger-text"><a  class="burger-link">Контакты</a></li>
+                    <li class="blist-item burger-text --active"><a  href="#" class="burger-link">Главная</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link">Наша компания</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link">Преимущества</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link">Цены</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link">Отзывы</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link">Частые вопросы</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link">Заказать услуги</a></li>
+                    <li class="blist-item burger-text"><a href="#" class="burger-link" >Контакты</a></li>
                 </ul>
             </nav>
             <button class="burger-feedback-btn feedback-btn">Заказать звонок</button>
@@ -100,34 +121,34 @@
     </div>
 </section>
 
-            <section class="about " id="trigger1">
+            <section class="about " >
     <div class="container">
       
         <div class="about-content">
             
             <div class="about-col texts-col" style="margin-top: 120px;">
-                <div class="company__title main-title title-company animation0 start-left-start" >Наша компания</div>
-                <div class="about-texts about-texts  animation0 start-left-start">
-                    <div class="about-texts__block">
+                <div class="company__title main-title title-company  start-left-animation" >Наша компания</div>
+                <div class="about-texts about-texts">
+                    <div class="about-texts__block start-left-animation animation-0">
                         <div class="about__title mini-title">Немного о нас</div>
                         <div class="about__title subtitle">MOTODRIVE — одна из первых компаний по прокату
                             мототехники в Бресте! Мы предоставляем услуги проката кроссовых мотциклов. У нас большой опыт по
                             проведению катаний на мотоцикле как для новичков, так и опытных! Если вы новичек — не
                             переживайте! Мы поможем Вам разобраться с техникой и научим ездить!</div>
                     </div>
-                    <div class="about-texts__block">
-                        <div class="about__title mini-title">С нами безопасно!</div>
+                    <div class="about-texts__block start-left-animation animation-0" >
+                        <div class="about__title mini-title ">С нами безопасно!</div>
                         <div class="about__title subtitle">Мы отвечаем за вашу безопасность при катании. Поэтому
                             делаем все, чтоб избежать опастных ситуаций и травм. Экипировка выдаётся бесплатно! Все
                             мотоциклы своевременно обслуживаются. Особое внимание уделяется обудению новичков.</div>
                     </div>
-                    <div class="about-texts__block special-block" >
+                    <div class="about-texts__block special-block start-left-animation animation-1" >
                         <div class="about__title mini-title">Когда мы работаем?</div>
                         <div class="about__title subtitle">Когда мы работаем?
                             Мы работаем круглосуточно без выходных в любую пору года! Звоните в любое удобное для вас время!
                         </div>
                     </div>
-                    <div class="about-texts__block">
+                    <div class="about-texts__block start-left-animation animation-1">
                         <div class="about__title mini-title">Как взять мотоцикл в аренду?</div>
                         <div class="about__title subtitle">Оставить заявку на сайте Motodrive.by или позвонить по
                             указанным телефонам, мы подберем для Вас удобное время и день, стоимость указана на сайте ниже.
@@ -137,15 +158,15 @@
                 </div>
     
             </div>
-            <div class="about-col animation1 start-right-start">
-                <div class="about-images about-images">
+            <div class="about-col animation1 ">
+                <div class="about-images about-images ">
                     <div class="about-images-col" style="margin: 14px 0px 0px 0px;">
-                        <img src="img/about-1.jpg" class="about-image" alt="about-1.jpg">
-                        <img src="img/about-3.jpg" class="about-image" alt="about-3.jpg">
+                        <img src="img/about-1.jpg" class="about-image start-right-animation animation-0" alt="about-1.jpg">
+                        <img src="img/about-3.jpg" class="about-image start-right-animation animation-1" alt="about-3.jpg">
                     </div>
                     <div class="about-images-col" style="margin: -14px 0px 0px 0px;">
-                        <img src="img/about-2.jpg" class="about-image" alt="about-2.jpg">
-                        <img src="img/about-4.jpg" class="about-image" alt="about-4.jpg">
+                        <img src="img/about-2.jpg" class="about-image start-right-animation animation-0" alt="about-2.jpg">
+                        <img src="img/about-4.jpg" class="about-image start-right-animation animation-1"  alt="about-4.jpg">
                     </div>
                 </div>
             </div>
@@ -158,27 +179,27 @@
             <section class="advantages" id="trigger2">
     <div class="container">
         <div class="advantages-content">
-            <div class="advantages-title main-title animation2 start-left-start">Преимущества</div>
+            <div class="advantages-title main-title animation2 start-left-animation">Преимущества</div>
             <ul class="advantages-list">
-                <li class="advantages-item animation3 start-left-start">
+                <li class="advantages-item  start-updown-animation animation-2">
                     <img src="img/advantages-1.svg" alt="" class="advantages-icon ">
                     <div class="advantages-mini-title mini-title">Большой опыт</div>
                     <div class="advantages-mini-subtitle subtitle">Мы имеем огромный опыт за спиной по проведению
                         поездок, обучению и инструктажу новичков</div>
                 </li>
-                <li class="advantages-item animation3 start-left-start">
+                <li class="advantages-item start-updown-animation animation-2">
                     <img src="img/advantages-2.svg" alt="" class="advantages-icon ">
                     <div class="advantages-mini-title mini-title">Качественное оборудование</div>
                     <div class="advantages-mini-subtitle subtitle">Мы предоставляем только качественное оборудование.
                         Возможность поломки во время катания минимальна</div>
                 </li>
-                <li class="advantages-item animation4 start-right-start">
+                <li class="advantages-item  start-updown-animation animation-3">
                     <img src="img/advantages-3.svg" alt="" class="advantages-icon">
                     <div class="advantages-mini-title mini-title">Интересные маршруты</div>
                     <div class="advantages-mini-subtitle subtitle">Маршруты проходят через живописные места. Так вы
                         будете получать удовольствие от каждого момента поездки</div>
                 </li>
-                <li class="advantages-item animation4 start-right-start">
+                <li class="advantages-item start-updown-animation animation-3">
                     <img src="img/advantages-4.svg" alt="" class="advantages-icon ">
                     <div class="advantages-mini-title mini-title">Права не нужны!</div>
                     <div class="advantages-mini-subtitle subtitle">Наши мотоциклы являются спортивным инвертарем и не
@@ -192,9 +213,9 @@
             <section class="price" id="trigger3">
     <div class="container">
         <div class="price-content">
-            <div class="price-title main-title animation5 start-left-start">Цены</div>
+            <div class="price-title main-title start-left-animation">Цены</div>
             <div class="price-blocks">
-                <article class="price-block animation5 start-left-start" style="background-image: url(img/block-1.jpg)">
+                <article class="price-block  start-scale-animation animation-4" style="background-image: url(img/block-1.jpg)">
                     <div class="price-block__price">35p.</div>
                     <div class="price-block__info block-info">
                         <div class="block-info__header">
@@ -214,7 +235,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="price-block animation6 start-right-start" style="background-image: url(img/block-2.jpg)">
+                <article class="price-block start-scale-animation animation-4" style="background-image: url(img/block-2.jpg)">
                     <div class="price-block__price">45p.</div>
                     <div class="price-block__info block-info">
                         <div class="block-info__header">
@@ -234,7 +255,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="price-block animation5 start-left-start" style="background-image: url(img/block-3.jpg)">
+                <article class="price-block start-scale-animation animation-5" style="background-image: url(img/block-3.jpg)">
                     <div class="price-block__price">30p.</div>
                     <div class="price-block__info block-info">
                         <div class="block-info__header">
@@ -254,7 +275,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="price-block animation6 start-right-start" style="background-image: url(img/block-4.jpg)">
+                <article class="price-block start-scale-animation animation-5" style="background-image: url(img/block-4.jpg)">
                     <div class="price-block__price">40р.</div>
                     <div class="price-block__info block-info">
                         <div class="block-info__header">
@@ -281,9 +302,9 @@
             <div class="reviews" id="trigger4">
     <div class="container">
         <div class="reviews-content">
-            <div class="reviews-title main-title animation7 start-left-start">Отзывы</div>
+            <div class="reviews-title main-title start-left-animation">Отзывы</div>
             <div class="reviews-list">
-                <article class="reviews-item animation7 start-left-start">
+                <article class="reviews-item start-height-animation animation-6">
                     <div class="reviews-header">
                         <img src="img/avatar-1.png" class="user-avatar">
                         <div class="user">
@@ -310,7 +331,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="reviews-item animation8 start-right-start">
+                <article class="reviews-item start-height-animation  animation-6">
                     <div class="reviews-header">
                         <img src="img/avatar-2.png" class="user-avatar">
                         <div class="user">
@@ -337,7 +358,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="reviews-item animation7 start-left-start">
+                <article class="reviews-item start-height-animation  animation-7">
                     <div class="reviews-header">
                         <img src="img/avatar-3.png" class="user-avatar">
                         <div class="user">
@@ -364,7 +385,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="reviews-item animation8 start-right-start">
+                <article class="reviews-item start-height-animation  animation-7">
                     <div class="reviews-header">
                         <img src="img/avatar-4.png" class="user-avatar">
                         <div class="user">
@@ -403,10 +424,10 @@
         <div class="faq-content">
 
             <div class="faq-col">
-                <div class="company__title main-title title-company animation9 start-left-start">Частые вопросы</div>
-                <div class="faq-texts faq-texts animation9 start-left-start">
+                <div class="company__title main-title title-company start-left-animation">Частые вопросы</div>
+                <div class="faq-texts faq-texts ">
                     <div class="faq-col">
-                        <div class="faq-texts__block">
+                        <div class="faq-texts__block start-width-animation animation-8">
                             <div class="faq__title mini-title">Что такое питбайк?</div>
                             <div class="faq__title subtitle">Питбайк — это разновидность мотоцикла, ориентированного на
                                 начинающих мотоциклистов-любителей, а так же мини-мотокросса или мини-супермото .
@@ -414,7 +435,7 @@
                                 управления и достаточную мощность, для того что бы почувствовать «взрослые» ощущения от
                                 вождения!</div>
                         </div>
-                        <div class="faq-texts__block">
+                        <div class="faq-texts__block start-width-animation animation-9">
                             <div class="faq__title mini-title">Что нужно иметь при себе?</div>
                             <div class="faq__title subtitle">Желательно
                                 При себе надо иметь:<br>
@@ -426,21 +447,21 @@
                         </div>
                     </div>
                     <div class="faq-col">
-                        <div class="faq-texts__block">
+                        <div class="faq-texts__block start-width-animation animation-10">
                             <div class="faq__title mini-title">В чем плюсы пит байка?</div>
                             <div class="faq__title subtitle">Питбайки позволяют без лишнего риска и высоких нагрузок
                                 обучиться езде на мотоцикле, разобраться в его работе, научиться переключать передачи,
                                 чувствовать сцепление и правильно тормозить, ощутить поведение на различных покрытиях</div>
                         </div>
     
-                        <div class="faq-texts__block">
+                        <div class="faq-texts__block start-width-animation animation-11">
                             <div class="faq__title mini-title">Можно ли кататься зимой?</div>
                             <div class="faq__title subtitle">Конечно можно! В отличие от дорожных мотоциклов, гонять на
                                 питбайке вы можете круглый год без каких-либо последствий для себя и техники. Это весело и
                                 гораздо безопаснее!
                             </div>
                         </div>
-                        <div class="faq-texts__block">
+                        <div class="faq-texts__block start-width-animation animation-12">
                             <div class="faq__title mini-title">Нужны ли права на питбайк?</div>
                             <div class="faq__title subtitle">Для управления питбайком НЕ требуется водительское
                                 удостоверение, так как он является спортивным инвентарем.
@@ -450,16 +471,16 @@
                 </div>
 
             </div>
-            <div class="faq-col animation10 start-right-start" style="margin-left: 30px;">
+            <div class="faq-col " style="margin-left: 30px;">
                 <div class="faq-images faq-images">
                     <div class="faq-images-col" style="margin: 14px 0px 0px 0px;">
-                        <img src="img/faq-1.jpg" class="faq-image faq-image__big" alt="faq-1.jpg">
+                        <img src="img/faq-1.jpg" class="faq-image faq-image__big start-width-animation animation-13" alt="faq-1.jpg">
                        
-                        <img src="img/faq-3.jpg" class="faq-image faq-image__small" alt="faq-3.jpg" >
+                        <img src="img/faq-3.jpg" class="faq-image faq-image__small start-width-animation animation-14" alt="faq-3.jpg" >
                     </div>
                     <div class="faq-images-col" style="margin: -14px 0px 0px 0px;">
-                        <img src="img/faq-2.jpg" class="faq-image faq-image__small" alt="faq-2.jpg "  >
-                        <img src="img/faq-4.jpg" class="faq-image faq-image__big" alt="faq-4.jpg" >
+                        <img src="img/faq-2.jpg" class="faq-image faq-image__small start-width-animation animation-15" alt="faq-2.jpg "  >
+                        <img src="img/faq-4.jpg" class="faq-image faq-image__big start-width-animation animation-16" alt="faq-4.jpg" >
                     </div>
                 </div>
             </div>
@@ -479,7 +500,7 @@
     <div class="container">
 
         <div class="feedback-content ">
-            <div class="feedback-col">
+            <div class="feedback-col start-opacity-animation animation-17">
                 <form class="order-service content content-order" method="post" name="order-form" id="order-form">
                     <div class="order-service-title feedback-title">Заказать услуги</div>
                     <input  class="order-service-input input-name" name="input-name" placeholder="Имя">
@@ -491,7 +512,7 @@
                     <input  class="order-service-btn input-btn" type="submit"  value="Заказать звонок">
                 </form>
             </div>
-            <div class="feedback-col">
+            <div class="feedback-col start-opacity-animation animation-18">
                 <div class="contacts content content-contacts"  style="    margin: 0 auto;">
                     <ul class="contacts-list">
                         <div class="contacts-title feedback-title">Контакты</div>
@@ -568,14 +589,14 @@
                 <div class="footer-copy">©2021 sitename.by | Все права защищены</div>
             </div>
             <ul class="footer-col footer-links">
-                <li class="footer-item"><a class="footer-link active">Главная</a></li>
-                <li class="footer-item"><a class="footer-link">Наша компания</a></li>
-                <li class="footer-item"><a class="footer-link">Преимущества</a></li>
-                <li class="footer-item"><a class="footer-link">Цены</a></li>
-                <li class="footer-item"><a class="footer-link">Отзывы</a></li>
-                <li class="footer-item"><a class="footer-link">Частые вопросы</a></li>
-                <li class="footer-item"><a class="footer-link">Заказать услуги</a></li>
-                <li class="footer-item"><a class="footer-link">Контакты</a></li>
+                <li class="footer-item"><a href="#" class="footer-link ">Главная</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Наша компания</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Преимущества</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Цены</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Отзывы</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Частые вопросы</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Заказать услуги</a></li>
+                <li class="footer-item"><a href="#" class="footer-link active">Контакты</a></li>
             </ul>
             <div class="footer-col footer-other">
                 <button class="footer-btn arrow-btn">
@@ -590,9 +611,7 @@
 
         </div>
         <script src="js/app.min.js"></script>
-        <script>
-            
-        </script>
+
     </body>
 
 </html>
